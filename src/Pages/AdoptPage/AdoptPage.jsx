@@ -1,9 +1,8 @@
 import "./AdoptPage.scss"
-import React from 'react'
 
 const AdoptPage = () => {
   return (
-    <div>AdoptPage</div>
+    <div className="p-adopt-container">AdoptPage</div>
   )
 }
 

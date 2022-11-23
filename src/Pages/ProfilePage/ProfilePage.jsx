@@ -3,7 +3,7 @@ import React from 'react'
 
 const ProfilePage = () => {
   return (
-    <div>ProfilePage</div>
+    <div className="p-profile-container">ProfilePage</div>
   )
 }
 

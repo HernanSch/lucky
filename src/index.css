@@ -2,13 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;900&display=swap');
 
 @font-face {
-  font-family: "Gilroy Bold";
-  src: local("Gilroy Bold"), url("../public/assets/fonts/gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-family: 'Gilroy Bold';
+  src: url('../public/assets/fonts/gilroy/Gilroy-Bold.ttf');
+  font-weight: 600;
 }
 @font-face {
-  font-family: "Gilroy Medium";
-  src: local("Gilroy Medium"), url("../public/assets/fonts/gilroy/Gilroy-Medium.ttf") format("truetype");
+  font-family: 'Gilroy Medium';
+  src: url('../public/assets/fonts/gilroy/Gilroy-Medium.ttf');
+  font-weight: 400;
 }
+
+
+
 *,
 *::before,
 *::after {

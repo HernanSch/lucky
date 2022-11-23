@@ -3,7 +3,7 @@ import React from 'react'
 
 const MorePage = () => {
   return (
-    <div>MorePage</div>
+    <div className="p-more-container">MorePage</div>
   )
 }
 

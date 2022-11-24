@@ -3,7 +3,6 @@ import React from 'react';
 import MainPage from './Pages/MainPage/MainPage';
 import SpinnerComponent from './Components/SpinnerComponent/SpinnerComponent';
 
-
 function App() {
   return (
     
@@ -13,7 +12,9 @@ function App() {
         <SpinnerComponent/>
       </header>
       <main>
+
         <MainPage/>
+
       </main>
       <footer>
 

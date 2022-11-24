@@ -7,6 +7,7 @@ import AdoptPage from './Pages/AdoptPage/AdoptPage';
 import ProfilePage from './Pages/ProfilePage/ProfilePage';
 import NavbarComponent from './Components/NavbarComponent/NavbarComponent';
 import MorePage from './Pages/MorePage/MorePage';
+import OnboardingPage from './Pages/OnboardingPage/OnboardingPage';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path='/AdoptPage' element={<AdoptPage/>}></Route>
             <Route path='/ProfilePage' element={<ProfilePage/>}></Route>
             <Route path='/MorePage' element={<MorePage/>}></Route>
+            <Route path='/OnboardingPage' element={<OnboardingPage/>}></Route>
           </Routes>
         </div>
 

@@ -1,0 +1,99 @@
+.c-container-gallery{
+    width: 100%;
+    height: 84vh;
+    justify-content: center;
+    }
+    .simplebar-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    
+    .simplebar-scrollbar::before {
+        background: rgb(2,0,36);
+        background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(32,32,34,1) 53%, rgba(40,45,46,1) 100%);
+        height: 100px;
+      }
+      .c-characters--holder {
+        width: 99%;
+        height: 84vh;
+        margin: 10PX;
+      }
+    .container-art{
+        border-color:rgb( 250,156,147) ;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin-bottom: 32px;
+        border-bottom-left-radius:10px  ;
+        border-bottom-right-radius:10px;
+        p{
+            size: 16px;
+            color: white;
+            background-color:rgb( 250,156,147) ;
+            height: 34px;
+            text-align: center;
+            border-bottom-left-radius:10px  ;
+            border-bottom-right-radius:10px;
+            }
+         img{
+            width: 200px;
+            height: 253px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+         }  
+     }
+
+     .c-characters--container {
+        margin-top: 8vh;
+        width: 100%;
+        height: 84vh;
+        justify-content: center;
+    }
+    
+    .simplebar-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    
+    .simplebar-scrollbar::before {
+        background: rgb(2,0,36);
+        background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(32,32,34,1) 53%, rgba(40,45,46,1) 100%);
+        height: 100px;
+      }
+      .c-characters--holder {
+        width: 99%;
+        height: 84vh;
+        margin: 10PX;
+      }
+      
+      .c-characters--card__holder{
+        margin: 20px;
+        
+      }
+    
+      .c-characters--card {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        width: 270px;
+        height: 480px;
+        background-color:  rgba(255, 255, 255, 0.8);
+        border-radius: 20px;
+        
+        
+      }
+      .c-characters--card img {
+        margin-bottom: 20px;
+        margin-right: 60px;
+        max-height: 270px;
+        max-width: 210px;
+      }
+      .c-characters--card p {
+        color: #303030;
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 20px;
+      }

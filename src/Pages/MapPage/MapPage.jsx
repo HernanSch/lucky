@@ -1,8 +1,9 @@
 import React from 'react'
+import './MapPage.scss'
 
 const MapPage = () => {
   return (
-    <div>MapPage</div>
+    <div className='c-map-container'>MapPage</div>
   )
 }
 

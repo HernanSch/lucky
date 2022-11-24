@@ -1,4 +1,5 @@
 import "./OnboardingPage.scss"
+
 import React, { useState } from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import onboarding1 from '../../assets/images/onboarding1.png'

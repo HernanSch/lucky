@@ -2,6 +2,8 @@ import './App.css';
 import React from 'react';
 import HomePage from './Pages/HomePage/HomePage';
 import MainPage from './Pages/MainPage/MainPage';
+import LoginPage from './Pages/LoginPage/LoginPage'
+import RegisterPage from './Pages/RegisterPage/RegisterPage';
 
 
 
@@ -16,6 +18,9 @@ function App() {
       <main>
         
         <MainPage/>
+        {/* <LoginPage></LoginPage> */}
+         <RegisterPage></RegisterPage>
+
       </main>
       <footer>
 

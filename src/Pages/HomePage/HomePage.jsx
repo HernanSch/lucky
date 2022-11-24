@@ -18,13 +18,14 @@ const HomePage = () => {
         
         
       
-    </div>
+    
 
     <div>
 
     <div className="p-homepage-container">HomePage</div>
     {/* <Botton title={"Usuario"}></Botton>  */}
     
+    </div>
     </div>
 
   )

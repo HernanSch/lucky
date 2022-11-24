@@ -9,7 +9,7 @@ function App() {
 
     <div>
       <header>
-        <SpinnerComponent/>
+
       </header>
       <main>
 

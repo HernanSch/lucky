@@ -1,8 +1,7 @@
 import './App.css';
 import React from 'react';
-import HomePage from './Pages/HomePage/HomePage';
 import MainPage from './Pages/MainPage/MainPage';
-
+import SpinnerComponent from './Components/SpinnerComponent/SpinnerComponent';
 
 
 function App() {
@@ -11,10 +10,9 @@ function App() {
 
     <div>
       <header>
-
+        <SpinnerComponent/>
       </header>
       <main>
-        
         <MainPage/>
       </main>
       <footer>

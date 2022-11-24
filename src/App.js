@@ -2,6 +2,8 @@ import './App.css';
 import React from 'react';
 import MainPage from './Pages/MainPage/MainPage';
 import SpinnerComponent from './Components/SpinnerComponent/SpinnerComponent';
+import ElectionPage from './Pages/ElectionPage/ElectionPage';
+import HomePage from './Pages/HomePage/HomePage';
 
 function App() {
   return (
@@ -9,7 +11,8 @@ function App() {
 
     <div>
       <header>
-        <SpinnerComponent/>
+        {/* <SpinnerComponent/> */}
+        {/* <ElectionPage/> */}
       </header>
       <main>
 

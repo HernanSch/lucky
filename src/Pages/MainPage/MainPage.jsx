@@ -6,6 +6,7 @@ import ProfilePage from "../ProfilePage/ProfilePage";
 import MorePage from "../MorePage/MorePage";
 import NavbarComponent from "../../Components/NavbarComponent/NavbarComponent";
 import HomePage from '../HomePage/HomePage';
+import OnboardingPage from '../OnboardingPage/OnboardingPage';
 
 const MainPage = () => {
   return (
@@ -23,6 +24,7 @@ const MainPage = () => {
             <Route path='/AdoptPage' element={<AdoptPage/>}></Route>
             <Route path='/ProfilePage' element={<ProfilePage/>}></Route>
             <Route path='/MorePage' element={<MorePage/>}></Route>
+            <Route path='/OnboardingPage' element={<OnboardingPage/>}></Route>
           </Routes>
         </div>
 

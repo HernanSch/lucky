@@ -1,10 +1,10 @@
 import "./OnboardingPage.scss"
-
 import React, { useState } from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import onboarding1 from '../../assets/images/onboarding1.png'
 import onboarding2 from '../../assets/images/onboarding2.png'
 import onboarding3 from '../../assets/images/onboarding3.png'
+import ButtonXComponent from '../../Components/ButtonXComponent/ButtonXComponent'
 
 
 function OnboardingPage() {
@@ -14,7 +14,9 @@ function OnboardingPage() {
     setIndex(selectedIndex);
   }
   return (
-    <div className="o-c-container">
+    <div>
+        <ButtonXComponent></ButtonXComponent>
+      <div className="o-c-container">
     <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
       <Carousel.Item interval={1000}>
         <img
@@ -49,6 +51,8 @@ function OnboardingPage() {
       </Carousel.Item>
     </Carousel>
     </div>
+    </div>
+    
   );
 }
 

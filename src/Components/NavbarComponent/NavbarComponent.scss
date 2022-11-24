@@ -20,3 +20,56 @@
     }
 
 }
+
+.c-navbar-button {
+    display: flex;
+    &__home {
+        width: 24px;
+        height: 24px;
+        background-image: url(../../../public/assets/icons/protectora.png); 
+        background-position: center;
+        background-size: contain;
+        background-color: transparent;
+        
+    }
+    &__map {
+        width: 24px;
+        height: 24px;
+        background-image: url(../../../public/assets/icons/protectora.png); 
+        background-position: center;
+        background-size: contain;
+        background-color: transparent;
+        
+    }
+    &__adopt {
+        width: 24px;
+        height: 24px;
+        background-image: url(../../../public/assets/icons/protectora.png); 
+        background-position: center;
+        background-size: contain;
+        background-color: transparent;
+        
+    }
+    &__profile {
+        width: 24px;
+        height: 24px;
+        background-image: url(../../../public/assets/icons/protectora.png); 
+        background-position: center;
+        background-size: contain;
+        background-color: transparent;
+        
+    }
+    &__more {
+        width: 24px;
+        height: 24px;
+        background-image: url(../../../public/assets/icons/protectora.png); 
+        background-position: center;
+        background-size: contain;
+        background-color: transparent;
+        
+    }
+}
+
+.active {
+    color:red;
+}

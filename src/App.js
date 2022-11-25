@@ -9,6 +9,7 @@ import AuthButton from './Components/AuthButton/AuthButton';
 import { IsLoggedContext } from './contexts/IsLoggedContext';
 import { getCookieUtil } from "./utils/getCookieUtil";
 
+
 function App() {
   const [isLogged, setIsLogged] = useState(!!getCookieUtil('token'));
   return (
@@ -24,6 +25,12 @@ function App() {
           <LoginPage></LoginPage>
           <RegisterPage></RegisterPage>
            <AuthButton></AuthButton>
+
+          <LoginPage></LoginPage>
+          <RegisterPage></RegisterPage>
+           <AuthButton></AuthButton>
+
+
 
       </main>
       <footer>

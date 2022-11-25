@@ -12,7 +12,17 @@ const HomePage = () => {
     
     <div className="p-homepage-container">
         <NewsGalleyHomeComponent/>
+
     </div>
+
+   </div>
+
+
+
+   
+
+
+
   )
 }
 

@@ -5,6 +5,8 @@ import onboarding1 from '../../assets/images/onboarding1.png'
 import onboarding2 from '../../assets/images/onboarding2.png'
 import onboarding3 from '../../assets/images/onboarding3.png'
 import ButtonXComponent from '../../Components/ButtonXComponent/ButtonXComponent'
+import { useNavigate } from "react-router-dom";
+
 
 
 function OnboardingPage() {
@@ -13,9 +15,13 @@ function OnboardingPage() {
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   }
+  const navigate = useNavigate();
   return (
+    
     <div>
-      <ButtonXComponent></ButtonXComponent>
+        <div>
+       <button className="c-button-X" onClick={() => navigate("/ElectionPage")}>X</button>
+    </div>
     <div className="o-c-container">
 
     <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
@@ -50,7 +56,6 @@ function OnboardingPage() {
           <h1>Si eres una asociación sube a tus peludos para darles más difusión</h1>
         </Carousel.Caption>
       </Carousel.Item>
-
     </Carousel>
     </div>
     </div>

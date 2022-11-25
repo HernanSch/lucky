@@ -6,7 +6,7 @@ const BottonXCompoment = () => {
 const navigate = useNavigate();
   return (
     <div>
-       <button className="c-button-X" onClick={() => navigate("/")}>X</button>
+       <button className="c-button-X" onClick={() => navigate("/ElectionPage")}>X</button>
     </div>
   )
 }

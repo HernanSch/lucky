@@ -45,7 +45,7 @@ function SpinnerComponent() {
         </>
       ) : (
         <>
-          <ElectionPage/>
+          <OnboardingPage/>
         </>
       )}
     </>

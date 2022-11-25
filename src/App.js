@@ -19,8 +19,12 @@ import AdoptPage from './Pages/AdoptPage/AdoptPage';
 
 function App() {
   const [isLogged, setIsLogged] = useState(!!getCookieUtil('token'));
+  const [user,setUser] = useState(null)
+
   return (
-    <IsLoggedContext.Provider value={{ isLogged, setIsLogged }}>
+    <IsLoggedContext.Provider value={{ isLogged, setIsLogged,user,setUser }}>
+    
+
       <Router>
     <div>
       <header>

@@ -1,36 +1,34 @@
-import React, { useContext } from 'react'
-import { useForm } from "react-hook-form";
-import { IsLoggedContext } from '../../shared/contexts/IsLoggedContext';
-import { API } from "../../shared/services/api";
+import React from "react";
+import { useContext } from "react";
+import { IsLoggedContext } from "../../contexts/IsLoggedContext";
+import { getCookieUtil } from "../../utils/getCookieUtil";
+import { removeCookieUtil } from "../../utils/removeCookieUtil";
+import "./AuthButton.scss"
 
-export default function LoginPage() {
-    const { register, handleSubmit } = useForm();
-    const {setIsLogged} = useContext(IsLoggedContext);
+export default function AuthButton () {
+    const {isLogged, setIsLogged} = useContext(IsLoggedContext);
+    
+    const stringUser = getCookieUtil('user');
+    const user = JSON.parse(stringUser ? stringUser : '{}');
 
-    const onSubmit = formData => {
-        API.post('login', formData).then(res => {
-            document.cookie = 'token=' + res.data.token;
-            document.cookie = 'user=' +  JSON.stringify(res.data.user);
-            setIsLogged(true);
-        })
+    const signOut = () => {
+        removeCookieUtil('user');
+        removeCookieUtil('token');
+
+        setIsLogged(false);
+        
     }
 
-    return (
-        <form onSubmit={handleSubmit(onSubmit)}>
-            {/* register your input into the hook by invoking the "register" function */}
-            <label htmlFor="email">Email</label>
-            <input name="email" id="email" defaultValue="contacto@abelcabezaroman.com"
-                   ref={register({ required: true, pattern: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/ })}/>
-            {/* include validation with required or other standard HTML validation rules */}
-            <label htmlFor="password">Password</label>
-            <input name="password" id="password" type="password" defaultValue={'ABCedf123'}
-                   ref={register({
-                       required: true,
-                       pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/
-                   })}/> {/* errors will return when field validation fails  */}
-            {/*{errors.exampleRequired && <span>This field is required</span>}*/}
-
-            <input type="submit" value="Login"/>
-        </form>
-    )
+    return isLogged ? (
+        <p className="red">
+            Welcome! {user.name}
+            <button
+                onClick={signOut}
+            >
+                Sign out
+            </button>
+        </p>
+    ) : (
+        <p>You are not logged in.</p>
+    );
 }

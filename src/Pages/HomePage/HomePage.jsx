@@ -1,10 +1,8 @@
 import "./HomePage.scss"
 import React from 'react'
-
 import NewsGalleyHomeComponent from "../../Components/NewsGalleyHomeComponent/NewsGalleyHomeComponent";
 
-import Botton from "../../Components/BottonDasboard/Botton"
-import BottonX from "../../Components/ButtonXComponent/ButtonXComponent" 
+
 
 
 const HomePage = () => {
@@ -13,21 +11,8 @@ const HomePage = () => {
 
     
     <div className="p-homepage-container">
-        
         <NewsGalleyHomeComponent/>
-        
-        
-      
-    
-
-    <div>
-
-    <div className="p-homepage-container">HomePage</div>
-    {/* <Botton title={"Usuario"}></Botton>  */}
-    
     </div>
-    </div>
-
   )
 }
 

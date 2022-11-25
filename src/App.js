@@ -1,4 +1,5 @@
 import './App.css';
+import SpinnerComponent from './Components/SpinnerComponent/SpinnerComponent';
 import React,{ useState } from 'react';
 import HomePage from './Pages/HomePage/HomePage';
 import MainPage from './Pages/MainPage/MainPage';
@@ -7,8 +8,6 @@ import RegisterPage from './Pages/RegisterPage/RegisterPage';
 import AuthButton from './Components/AuthButton/AuthButton';
 import { IsLoggedContext } from './contexts/IsLoggedContext';
 import { getCookieUtil } from "./utils/getCookieUtil";
-
-
 
 function App() {
   const [isLogged, setIsLogged] = useState(!!getCookieUtil('token'));
@@ -20,7 +19,7 @@ function App() {
 
       </header>
       <main>
-        
+
         <MainPage/>
           <LoginPage></LoginPage>
           <RegisterPage></RegisterPage>

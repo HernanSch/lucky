@@ -1,7 +1,5 @@
 import './App.css';
-import SpinnerComponent from './Components/SpinnerComponent/SpinnerComponent';
 import React,{ useState } from 'react';
-import HomePage from './Pages/HomePage/HomePage';
 import MainPage from './Pages/MainPage/MainPage';
 import LoginPage from './Pages/LoginPage/LoginPage'
 import RegisterPage from './Pages/RegisterPage/RegisterPage';

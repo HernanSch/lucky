@@ -11,6 +11,9 @@ const HomePage = () => {
 
     
     <div className="p-homepage-container">
+      <div className="p-homepage-carousel">
+
+      </div>
         <NewsGalleyHomeComponent/>
 
     </div>

@@ -7,19 +7,19 @@ const NavbarComponent = () => {
     <div className="c-navbar-container">
       <ul>
         <li>
-          <NavLink to='/'><button>Home</button></NavLink>
+          <NavLink to='/' activeclassname={'active'}><button className="c-navbar-button__home"><i class="fa fa-home" aria-hidden="true"></i></button></NavLink>
         </li>
         <li>
-          <NavLink to='/MapPage'><button>Map</button></NavLink>
+          <NavLink to='/MapPage' activeclassname={'active'}><button className="c-navbar-button__map"><i class="fa fa-map-marker" aria-hidden="true"></i></button></NavLink>
         </li>
         <li>
-          <NavLink to='/AdoptPage'><button>Adopt</button></NavLink>
+          <NavLink to='/AdoptPage' activeclassname={'active'}><button className="c-navbar-button__adopt"><i class="fa fa-hand-peace-o" aria-hidden="true"></i></button></NavLink>
         </li>
         <li>
-          <NavLink to='/ProfilePage'><button>Profile</button></NavLink>
+          <NavLink to='/ProfilePage' activeclassname={'active'}><button className="c-navbar-button__profile"><i class="fa fa-user-o" aria-hidden="true"></i></button></NavLink>
         </li>
         <li>
-          <NavLink to='/MorePage'><button>...</button></NavLink>
+          <NavLink to='/MorePage' activeclassname={'active'}><button className="c-navbar-button__more"><i class="fa fa-list" aria-hidden="true"></i></button></NavLink>
         </li>
       </ul>
     </div>

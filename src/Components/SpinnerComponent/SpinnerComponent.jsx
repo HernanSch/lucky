@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./SpinnerComponent.scss";
 import OnboardingPage from '../../Pages/OnboardingPage/OnboardingPage'
+import MainPage from "../../Pages/MainPage/MainPage";
+import ElectionPage from "../../Pages/ElectionPage/ElectionPage";
 
 function SpinnerComponent() {
   const [data, setData] = useState([]);
@@ -21,7 +23,7 @@ function SpinnerComponent() {
             setcompleted(true);
           }, 3000);
         });
-    }, 4000);
+    }, 2000);
   }, []);
 
   return (
@@ -34,12 +36,16 @@ function SpinnerComponent() {
               <div className="c-half-spinner"></div>
             </div>
           ) : (
+            <div className="c-spinner-logo">
+            
             <div className="c-spinner-completed"></div>
+            </div>
+            
           )}
         </>
       ) : (
         <>
-          <OnboardingPage/>
+          <ElectionPage/>
         </>
       )}
     </>

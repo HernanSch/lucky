@@ -25,6 +25,7 @@ const MainPage = () => {
             <Route path='/AdoptPage' element={<AdoptPage/>}></Route>
             <Route path='/ProfilePage' element={<ProfilePage/>}></Route>
             <Route path='/MorePage' element={<MorePage/>}></Route>
+            <Route path='/OnboardingPage' element={<OnboardingPage/>}></Route>
           </Routes>
         </div>
 

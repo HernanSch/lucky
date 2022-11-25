@@ -8,6 +8,7 @@ import { IsLoggedContext } from './contexts/IsLoggedContext';
 import { getCookieUtil } from "./utils/getCookieUtil";
 
 
+
 function App() {
   const [isLogged, setIsLogged] = useState(!!getCookieUtil('token'));
   return (
@@ -15,6 +16,9 @@ function App() {
 
     <div>
       <header>
+
+        {/* <SpinnerComponent/> */}
+        {/* <ElectionPage/> */}
 
       </header>
       <main>

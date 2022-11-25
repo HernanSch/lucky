@@ -1,5 +1,6 @@
 import React from 'react'
 import ButtonBlueUsers from "../../Components/ButtonBlueUsers/ButtonBlueUsers"
+import NavbarComponent from '../../Components/NavbarComponent/NavbarComponent'
 import "./ProfilePage.scss"
 
 
@@ -33,6 +34,7 @@ const ProfilePage = () => {
           <ButtonBlueUsers title={"Donar"} route={"MainPage"} img={""}></ButtonBlueUsers>
         </div>
       </div>
+      <NavbarComponent/>
     </div>
   )
 }

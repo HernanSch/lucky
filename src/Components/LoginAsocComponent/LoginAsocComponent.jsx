@@ -1,10 +1,12 @@
 import React, { useContext } from 'react'
 import { useForm } from "react-hook-form";
+import { useNavigate } from 'react-router-dom';
 import { IsLoggedContext } from '../../contexts/IsLoggedContext';
 import { API } from "../../services/api";
 import "./LoginAsocComponent.scss"
 
 const LoginAsocComponent = () => {
+    const navigate = useNavigate();
     const { register, handleSubmit } = useForm();
     
     const {setIsLogged} = useContext(IsLoggedContext);
@@ -37,7 +39,7 @@ const LoginAsocComponent = () => {
            
 
             
-            <button type="submit">Login</button>
+            <button type="submit" onClick={() => navigate("/Main")}>Login</button>
         </form>
       </div>
   )

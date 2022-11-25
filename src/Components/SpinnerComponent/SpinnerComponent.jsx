@@ -4,6 +4,7 @@ import OnboardingPage from '../../Pages/OnboardingPage/OnboardingPage'
 
 function SpinnerComponent() {
   const [data, setData] = useState([]);
+  console.log(data);
   const [loading, setloading] = useState(undefined);
   const [completed, setcompleted] = useState(undefined);
 

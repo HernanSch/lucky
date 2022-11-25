@@ -1,41 +1,39 @@
 import './App.css';
-import React from 'react';
-import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import React,{ useState } from 'react';
 import HomePage from './Pages/HomePage/HomePage';
-import MapPage from './Pages/MapPage/MapPage'
-import AdoptPage from './Pages/AdoptPage/AdoptPage';
-import ProfilePage from './Pages/ProfilePage/ProfilePage';
-import NavbarComponent from './Components/NavbarComponent/NavbarComponent';
-import MorePage from './Pages/MorePage/MorePage';
+import MainPage from './Pages/MainPage/MainPage';
+import LoginPage from './Pages/LoginPage/LoginPage'
+import RegisterPage from './Pages/RegisterPage/RegisterPage';
+import AuthButton from './Components/AuthButton/AuthButton';
+import { IsLoggedContext } from './contexts/IsLoggedContext';
+import { getCookieUtil } from "./utils/getCookieUtil";
+
+
 
 function App() {
+  const [isLogged, setIsLogged] = useState(!!getCookieUtil('token'));
   return (
-    <Router>
+    <IsLoggedContext.Provider value={{ isLogged, setIsLogged }}>
 
     <div>
       <header>
 
       </header>
       <main>
-        <div>
-          <Routes>
-            <Route path='/' element={<HomePage/>}></Route>
-            <Route path='/MapPage' element={<MapPage/>}></Route>
-            <Route path='/AdoptPage' element={<AdoptPage/>}></Route>
-            <Route path='/ProfilePage' element={<ProfilePage/>}></Route>
-            <Route path='/MorePage' element={<MorePage/>}></Route>
-          </Routes>
-        </div>
+        
+        <MainPage/>
+          <LoginPage></LoginPage>
+          <RegisterPage></RegisterPage>
+           <AuthButton></AuthButton>
 
       </main>
       <footer>
-        <NavbarComponent/>
 
       </footer>
     </div>
-    
-    </Router>
+    </IsLoggedContext.Provider>
   );
+  
 }
 
 export default App;

@@ -1,7 +1,22 @@
+@import './../../scss/colors.scss';
+
 .c-navbar-container{
     display: flex;
     width: 100vw;
     height: 10vh;
     bottom: 0;
+    box-shadow: 0px -10px 1px rgba(18, 19, 22, 0.1);
+    align-items: center;
+    justify-content: center;
+    & ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    & li {
+        display: flex;
+        margin: 20px;
+
+    }
 
 }

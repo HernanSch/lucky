@@ -6,7 +6,6 @@ import ProfilePage from "../ProfilePage/ProfilePage";
 import MorePage from "../MorePage/MorePage";
 import NavbarComponent from "../../Components/NavbarComponent/NavbarComponent";
 import HomePage from '../HomePage/HomePage';
-import OnboardingPage from '../OnboardingPage/OnboardingPage';
 
 const MainPage = () => {
   return (
@@ -14,12 +13,11 @@ const MainPage = () => {
 
     <div className="p-main-container">
       <header>
-      
+        
       </header>
       <main>
         <div>
           <Routes>
-          <Route path='/OnboardingPage' element={<OnboardingPage/>}></Route>
             <Route path='/' element={<HomePage/>}></Route>
             <Route path='/MapPage' element={<MapPage/>}></Route>
             <Route path='/AdoptPage' element={<AdoptPage/>}></Route>

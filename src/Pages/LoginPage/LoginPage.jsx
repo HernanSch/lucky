@@ -13,9 +13,10 @@ export default function LoginPage() {
     const onSubmit = formData => {
       console.log(formData)
         API.post('users/login', formData).then(res => {
-          
-             document.cookie = 'token=' + res.data;
-             document.cookie = 'user=' +  JSON.stringify(res.data);
+              // console.log(res.data.userInfo)
+             document.cookie = 'token=' + res.data.token;
+             document.cookie = 'user=' +  JSON.stringify(res.data.userInfo);
+             
             setIsLogged(true);
         })
     }

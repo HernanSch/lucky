@@ -1,11 +1,23 @@
-import React from 'react'
-import './MapPage.scss'
-import { Google, useLoadScript, Marker } from "@react-google-maps/api"
 
-const MapPage = () => {
-  return (
-    <div className='c-map-container'>MapPage</div>
-  )
+import './MapPage.scss'
+import { useMemo } from "react";
+import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
+
+export default function Home() {
+  const { isLoaded } = useLoadScript({
+    googleMapsApiKey: process.env.API_KEY,
+  });
+
+  if (!isLoaded) return <div>Loading...</div>;
+  return <Map />;
 }
 
-export default MapPage
+function Map() {
+  const center = useMemo(() => ({ lat: 40.4165, lng: -80 }), []);
+
+  return (
+    <GoogleMap zoom={10} center={center} mapContainerClassName="map-container">
+      <Marker position={center} />
+    </GoogleMap>
+  );
+}

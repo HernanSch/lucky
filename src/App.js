@@ -1,13 +1,12 @@
 import './App.css';
-import SpinnerComponent from './Components/SpinnerComponent/SpinnerComponent';
 import React,{ useState } from 'react';
-import HomePage from './Pages/HomePage/HomePage';
 import MainPage from './Pages/MainPage/MainPage';
 import LoginPage from './Pages/LoginPage/LoginPage'
 import RegisterPage from './Pages/RegisterPage/RegisterPage';
 import AuthButton from './Components/AuthButton/AuthButton';
 import { IsLoggedContext } from './contexts/IsLoggedContext';
 import { getCookieUtil } from "./utils/getCookieUtil";
+
 
 
 function App() {
@@ -18,17 +17,15 @@ function App() {
     <div>
       <header>
 
+        {/* <SpinnerComponent/> */}
+        {/* <ElectionPage/> */}
+
       </header>
       <main>
 
         <MainPage/>
-          <LoginPage></LoginPage>
-          <RegisterPage></RegisterPage>
-           <AuthButton></AuthButton>
 
-          <LoginPage></LoginPage>
-          <RegisterPage></RegisterPage>
-           <AuthButton></AuthButton>
+          
 
 
 

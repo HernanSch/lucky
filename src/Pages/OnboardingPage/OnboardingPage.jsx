@@ -17,6 +17,7 @@ function OnboardingPage() {
     <div>
       <ButtonXComponent></ButtonXComponent>
     <div className="o-c-container">
+
     <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
       <Carousel.Item interval={1000}>
         <img
@@ -53,6 +54,7 @@ function OnboardingPage() {
     </Carousel>
     </div>
     </div>
+
   );
 }
 

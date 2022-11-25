@@ -2,6 +2,13 @@
 
 .p-homepage-container{
     display: flex;
+    flex-direction: column;
     height: 90vh;
     width: 100vw;
+}
+.p-homepage-carousel {
+    display: flex;
+    height: 30vh;
+    width: 100vw;
+    border-bottom: 1px solid $brown-color;
 }

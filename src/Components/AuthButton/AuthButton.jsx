@@ -30,6 +30,5 @@ export default function AuthButton () {
         </p>
     ) : (
         <p>You are not logged in.</p>
-
     );
 }

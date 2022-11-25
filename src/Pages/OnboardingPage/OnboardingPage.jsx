@@ -15,8 +15,9 @@ function OnboardingPage() {
   }
   return (
     <div>
-        <ButtonXComponent></ButtonXComponent>
-      <div className="o-c-container">
+      <ButtonXComponent></ButtonXComponent>
+    <div className="o-c-container">
+
     <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
       <Carousel.Item interval={1000}>
         <img
@@ -49,10 +50,11 @@ function OnboardingPage() {
           <h1>Si eres una asociación sube a tus peludos para darles más difusión</h1>
         </Carousel.Caption>
       </Carousel.Item>
+
     </Carousel>
     </div>
     </div>
-    
+
   );
 }
 

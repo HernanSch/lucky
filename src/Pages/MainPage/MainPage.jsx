@@ -14,11 +14,12 @@ const MainPage = () => {
 
     <div className="p-main-container">
       <header>
-        
+      
       </header>
       <main>
         <div>
           <Routes>
+          <Route path='/OnboardingPage' element={<OnboardingPage/>}></Route>
             <Route path='/' element={<HomePage/>}></Route>
             <Route path='/MapPage' element={<MapPage/>}></Route>
             <Route path='/AdoptPage' element={<AdoptPage/>}></Route>

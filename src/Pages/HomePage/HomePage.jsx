@@ -15,9 +15,16 @@ const HomePage = () => {
 
       </div>
         <NewsGalleyHomeComponent/>
+
     </div>
 
-    
+   </div>
+
+
+
+   
+
+
 
   )
 }

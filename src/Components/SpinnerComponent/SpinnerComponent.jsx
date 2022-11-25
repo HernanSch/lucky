@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./SpinnerComponent.scss";
-import ElectionPage from "../../Pages/ElectionPage/ElectionPage";
 
 function SpinnerComponent() {
   const [data, setData] = useState([]);
@@ -43,7 +42,7 @@ function SpinnerComponent() {
         </>
       ) : (
         <>
-          <ElectionPage/>
+          
         </>
       )}
     </>

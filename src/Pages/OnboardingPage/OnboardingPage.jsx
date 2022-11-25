@@ -7,6 +7,7 @@ import onboarding3 from '../../assets/images/onboarding3.png'
 import ButtonXComponent from '../../Components/ButtonXComponent/ButtonXComponent'
 
 
+
 function OnboardingPage() {
   const [index, setIndex] = useState(0);
 

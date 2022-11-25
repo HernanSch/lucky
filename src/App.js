@@ -24,13 +24,8 @@ function App() {
       <main>
 
         <MainPage/>
-          <LoginPage></LoginPage>
-          <RegisterPage></RegisterPage>
-           <AuthButton></AuthButton>
 
-          <LoginPage></LoginPage>
-          <RegisterPage></RegisterPage>
-           <AuthButton></AuthButton>
+          
 
 
 

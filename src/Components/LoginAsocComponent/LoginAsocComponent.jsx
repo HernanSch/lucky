@@ -1,9 +1,9 @@
 import React from 'react'
 import { useForm } from "react-hook-form";
 import { API } from "../../services/api";
-import "./RegAsocComponent.scss";
+import "./LoginAsocComponent.scss"
 
-const RegAsocComponent = () => {
+const LoginAsocComponent = () => {
     const { register, handleSubmit } = useForm();  
  
 
@@ -40,4 +40,4 @@ const RegAsocComponent = () => {
   )
 }
 
-export default RegAsocComponent
+export default LoginAsocComponent

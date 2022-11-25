@@ -15,7 +15,7 @@ const HomePage = () => {
 
     </div>
 
-   </div>
+   
 
 
 

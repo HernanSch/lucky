@@ -36,6 +36,9 @@ export default function RegisterPage () {
             <input  id="password" type="password"
                   {...register("password",{ required: true, pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$/ })}/>
            
+            <label htmlFor="photo">Img</label>
+            <input  id="photo" 
+                   {...register("photo",{ required: true })}/>
 
             <button  type="submit" >Register</button>
         </form>

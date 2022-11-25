@@ -1,16 +1,11 @@
-import { useForm } from "react-hook-form";
-import AuthButton from "../../Components/AuthButton/AuthButton";
-import { API } from "../../services/api";
-import LoginPage from "../LoginPage/LoginPage";
-import RegisterPage from "../RegisterPage/RegisterPage";
-
+import React from 'react'
+import RegUserComponent from "../../Components/RegUserComponent/RegUserComponent";
+import "./RegUserPage.scss"
 const RegUserPage = () => {
     
   return (
-    <div>
-        <LoginPage></LoginPage>
-          <RegisterPage></RegisterPage>
-           <AuthButton></AuthButton>
+    <div className='p-reguser-container'>
+        <RegUserComponent/>
     </div>
   )
 }

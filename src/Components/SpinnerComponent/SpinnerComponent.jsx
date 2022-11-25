@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./SpinnerComponent.scss";
-import OnboardingPage from '../../Pages/OnboardingPage/OnboardingPage'
-import MainPage from "../../Pages/MainPage/MainPage";
 import ElectionPage from "../../Pages/ElectionPage/ElectionPage";
 
 function SpinnerComponent() {

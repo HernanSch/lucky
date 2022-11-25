@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import { API } from "../../services/api";
-import "./RegisterPage.scss"
+import "./RegUserComponent.scss"
 
 const RegUserComponent = () => {
     const { register, handleSubmit } = useForm();  

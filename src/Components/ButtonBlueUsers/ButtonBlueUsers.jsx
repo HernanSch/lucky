@@ -6,7 +6,7 @@ const ButtonBlueUsers = ({title,img,route}) => {
     const navigate = useNavigate();
   return (
     <div>
-    <></>
+
        <button className="c-button-users" onClick={() => navigate(`/${route}`)}>
        <img src={img} alt=""></img> {title} </button>
     </div>

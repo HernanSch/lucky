@@ -2,5 +2,29 @@
 
 .p-more-container{
     display: flex;
-    height: 90vh;
+    flex-direction: column;
+    
+    align-items: center
+
 }
+.button-container{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.button-container1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+    
+}
+.contenedor1{
+    margin-top: 51px;
+}
+.contenedor2{
+    margin-bottom: 62px;
+}
+       
+

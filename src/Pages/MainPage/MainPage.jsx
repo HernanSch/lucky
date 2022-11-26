@@ -1,25 +1,19 @@
 import React from 'react'
 import NavbarComponent from "../../Components/NavbarComponent/NavbarComponent";
 import NewsGalleyHomeComponent from '../../Components/NewsGalleyHomeComponent/NewsGalleyHomeComponent';
+import "./MainPage.scss"
 
 const MainPage = () => {
   return (
     
 
     <div className="p-main-container">
-
-      <div className="p-homepage-container">
-      <div className="p-homepage-carousel">
-
+      <div className="p-home-carousel">
+        
       </div>
-        <NewsGalleyHomeComponent/>
-
+      <NewsGalleyHomeComponent/>
+      <NavbarComponent/>
       </div>
-
-      
-        <NavbarComponent/>
-      
-    </div>
     
     
   )

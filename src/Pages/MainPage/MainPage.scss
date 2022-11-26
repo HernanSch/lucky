@@ -1,5 +1,10 @@
 .p-main-container{
     display: flex;
-    height: 100vh;
+    flex-direction: column;
+    height: 90vh;
     width: 100vw;
+}
+.p-home-carousel {
+    display: flex;
+    height: 25vh;
 }

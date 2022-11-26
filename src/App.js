@@ -10,7 +10,6 @@ import OnboardingPage from './Pages/OnboardingPage/OnboardingPage';
 import ElectionPage from './Pages/ElectionPage/ElectionPage';
 import LoginAsocPage from './Pages/LoginAsocPage/LoginAsocPage';
 import LoginUserPage from './Pages/LoginUserPage/LoginUserPage';
-import HomePage from './Pages/HomePage/HomePage';
 import MorePage from './Pages/MorePage/MorePage';
 import MapPage from './Pages/MapPage/MapPage';
 import ProfilePage from './Pages/ProfilePage/ProfilePage';

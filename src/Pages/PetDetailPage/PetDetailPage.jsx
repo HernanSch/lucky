@@ -12,7 +12,7 @@ const PetDetailPage = () => {
 
   useEffect(() => {
     const getPetById = async () =>{
-      const {data} = await axios.get(`http://localhost:9000/pets/${id}`)
+      const {data} = await axios.get(`http://localhost:8000/pets/${id}`)
       console.log(data.pet)
       setPet(data.pet);            
     };

@@ -57,7 +57,7 @@ ul,li {
 }
 ul{
   list-style:none;
-  padding-left:0;
+  padding-left:  0 !important;
 }
 li{
 
@@ -68,6 +68,12 @@ Link:visited {
   text-decoration:none;
 }
 
+.c-input-wrapper p {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12px;
+  margin-top: 10px;
+}
 .c-input {
   font-size: 16px;
   box-sizing: border-box;
@@ -75,7 +81,7 @@ Link:visited {
   width: 100%;
   cursor: pointer;
   border-bottom: 2px solid $ocean-color;
-  opacity: 80%;
+  opacity: 60%;
   &:hover,
   &:focus {
   color: $pinegreen-color;

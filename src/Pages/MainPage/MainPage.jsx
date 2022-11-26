@@ -1,6 +1,7 @@
 import React from 'react'
 import NavbarComponent from "../../Components/NavbarComponent/NavbarComponent";
 import NewsGalleyHomeComponent from '../../Components/NewsGalleyHomeComponent/NewsGalleyHomeComponent';
+import HelloUserComponent from '../../Components/HelloUserComponent/HelloUserComponent';
 import "./MainPage.scss"
 
 const MainPage = () => {
@@ -8,10 +9,13 @@ const MainPage = () => {
     
 
     <div className="p-main-container">
-      <div className="p-home-carousel">
-        
+      <div className="p-main-holder">
+        <div className='p-main-carousel'>
+        <HelloUserComponent/>
+        </div>
+        <NewsGalleyHomeComponent/>
       </div>
-      <NewsGalleyHomeComponent/>
+
       <NavbarComponent/>
       </div>
     

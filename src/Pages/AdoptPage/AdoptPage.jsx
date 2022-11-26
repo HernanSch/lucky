@@ -12,7 +12,7 @@ const AdoptPage = () => {
   const [searchPet, setSearchPet] = useState([]) // esta forma parte del buscador cambiar nombres 1º
   useEffect(() => {
       const getData = async () => {
-      const {data} = await axios.get("http://localhost:9000/pets");
+      const {data} = await axios.get("http://localhost:8000/pets");
       setPets(data);
   
       };

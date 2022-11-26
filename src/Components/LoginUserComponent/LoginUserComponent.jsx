@@ -6,7 +6,7 @@ import { API } from "../../services/api";
 import "./LoginUserComponent.scss"
 
 const LoginUserComponent = () => {
-    //const navigate = useNavigate();
+    const navigate = useNavigate();
     const { register, handleSubmit } = useForm();
     
     const {setIsLogged,setUser} = useContext(IsLoggedContext);
@@ -21,6 +21,7 @@ const LoginUserComponent = () => {
              document.cookie = 'user=' +  JSON.stringify(res.data.userInfo);
              setUser(res.data.userInfo)
             setIsLogged(res.data.token);
+            setIsLogged ? navigate("/home") : alert("error")
         })
     }
   return (

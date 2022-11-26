@@ -14,6 +14,7 @@ import MorePage from './Pages/MorePage/MorePage';
 import MapPage from './Pages/MapPage/MapPage';
 import ProfilePage from './Pages/ProfilePage/ProfilePage';
 import AdoptPage from './Pages/AdoptPage/AdoptPage';
+import PetDetailPage from './Pages/PetDetailPage/PetDetailPage';
 import SpinnerComponent from './Components/SpinnerComponent/SpinnerComponent';
 import FilterPage from './Pages/FilterPage/FilterPage';
 import AdoptFormPage from './Pages/AdoptFormPage/AdoptFormPage';
@@ -31,7 +32,7 @@ function App() {
     <div>
       <header>
 
-        <SpinnerComponent/>
+        {/* <SpinnerComponent/> */}
         {/* <ElectionPage/> */}
 
 
@@ -48,6 +49,8 @@ function App() {
           <Route path='/Main' element={<MainPage/>}></Route>
             <Route path='/MapPage' element={<MapPage/>}></Route>
             <Route path='/AdoptPage' element={<AdoptFormPage/>}></Route>
+            <Route path='/AdoptPage' element={<AdoptPage/>}></Route>
+            <Route path='/AdoptPage/:id' element={<PetDetailPage/>}></Route>
             <Route path='/ProfilePage' element={<ProfilePage/>}></Route>
             <Route path='/MorePage' element={<MorePage/>}></Route>
             <Route path='/Filter' element={<FilterPage/>}></Route>

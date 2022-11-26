@@ -2,75 +2,73 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import NavbarComponent from "../../Components/NavbarComponent/NavbarComponent"
+import Search from "../../Components/Search/Search";
+
 import "./AdoptPage.scss"
 
 
 
 const AdoptPage = () => {
+   
+    const [allPets, setPets] = useState([]);
+    const [searchPet, setSearchPet] = useState([]);
 
-  const [allPets, setPets] = useState ([]);
-  const [searchPet, setSearchPet] = useState([]) // esta forma parte del buscador cambiar nombres 1º
-  useEffect(() => {
-      const getData = async () => {
-      const {data} = await axios.get("http://localhost:8000/pets");
-      setPets(data);
-  
-      };
-      getData()
+    useEffect(() => {
+        const getData = async () => {
+            const { data } = await axios.get("http://localhost:8000/pets");
+            setPets(data);
+        };
+        getData()
 
-  },[]);
+    }, []);
 
-  const filterPets = allPets.filter((pets)=> pets.name.toLowerCase().includes(searchPet)) // esto es el filtro 4
-  
-  return (
-    <>
-    <div className="p-adopt-container">
-    <div>
-      <div>
-        <h3>Animales en adopcion</h3>
-      </div>
-      <div className="generalBoxChar">
+    const filterPets = allPets.filter((pets) => pets.name.toLowerCase().includes(searchPet)) // esto es el filtro 4
 
-          <div className="charContainer">
-              <div className="barBox">
+    return (
+        <>
+            <div>
+                <Search setSearchPj={setSearchPet}></Search>
+                
+            </div>  
+            <div className="p-adopt-container">     
+                <div>
+                    <div>
+                        <h3>Animales en adopcion</h3>
+                    </div>
+                    <div className="generalBoxChar">
 
-                  {filterPets.map((item, index) =>{
+                        <div className="charContainer">
+                            <div className="barBox">
 
-                  return(
+                                {filterPets.map((item, index) => {
 
-                          <Link  to={`/AdoptPage/${item._id}`}>
+                                    return (
 
-                              <div className="charBox" >
-                                  <div>
-                                      <img className="image" src={item.photo} alt="" /> 
-                                  </div>
+                                        <Link to={`/AdoptPage/${item._id}`}>
 
-                                  <div className="namesChar">
-                                      <div className="backg">
-                                          <h2>{item?.name}</h2>
-                                          <h2>{item?.age}</h2>
-                                          <h2>{item?.record}</h2>
-                                          <h2>{item?.condition}</h2>
-                                      </div>    
-                                  </div>
-                              </div>
-                          </Link>           
-                  )
-                  })}                  
-              </div>
-          </div>          
-      </div>
-  </div>
-    
+                                            <div className="charBox" >
+                                                <div>
+                                                    <img className="image" src={item.photo} alt="" />
+                                                </div>
 
-    
-
-
-    
-    </div>
-    <NavbarComponent/>
-    </>
-  )
+                                                <div className="namesChar">
+                                                    <div className="backg">
+                                                        <h2>{item?.name}</h2>
+                                                        <h2>{item?.condition}</h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    )
+                                })}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <NavbarComponent />
+        </>
+    )
 }
 
 export default AdoptPage

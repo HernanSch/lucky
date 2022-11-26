@@ -40,17 +40,17 @@ const AdoptPage = () => {
 
                           <Link  to={`/AdoptPage/${item._id}`}>
 
-                              <div className="charBox" key={index}>
+                              <div className="charBox" >
                                   <div>
                                       <img className="image" src={item.photo} alt="" /> 
                                   </div>
 
                                   <div className="namesChar">
                                       <div className="backg">
-                                          <h2 className="textOn">{item?.name}</h2>
-                                          <h2 className="textOn">{item?.age}</h2>
-                                          <h2 className="textOn">{item?.record}</h2>
-                                          <h2 className="textOn">{item?.condition}</h2>
+                                          <h2>{item?.name}</h2>
+                                          <h2>{item?.age}</h2>
+                                          <h2>{item?.record}</h2>
+                                          <h2>{item?.condition}</h2>
                                       </div>    
                                   </div>
                               </div>

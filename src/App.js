@@ -3,7 +3,6 @@ import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import React,{ useState } from 'react';
 import { IsLoggedContext } from './contexts/IsLoggedContext';
 import { getCookieUtil } from "./utils/getCookieUtil";
-import MainPage from './Pages/MainPage/MainPage';
 import RegUserPage from './Pages/RegUserPage/RegUserPage';
 import RegAsocPage from './Pages/RegAsocPage/RegAsocPage';
 import OnboardingPage from './Pages/OnboardingPage/OnboardingPage';
@@ -15,6 +14,7 @@ import MorePage from './Pages/MorePage/MorePage';
 import MapPage from './Pages/MapPage/MapPage';
 import ProfilePage from './Pages/ProfilePage/ProfilePage';
 import AdoptPage from './Pages/AdoptPage/AdoptPage';
+import SpinnerComponent from './Components/SpinnerComponent/SpinnerComponent';
 
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
     <div>
       <header>
 
-        {/* <SpinnerComponent/> */}
+        <SpinnerComponent/>
         {/* <ElectionPage/> */}
 
       </header>
@@ -42,8 +42,7 @@ function App() {
           <Route path='/RegAsocPage' element={<RegAsocPage/>}></Route>
           <Route path='/' element={<OnboardingPage/>}></Route>
           <Route path='/Election' element={<ElectionPage/>}></Route>
-          <Route path='/Main' element={<MainPage/>}></Route>
-            <Route path='/Home' element={<HomePage/>}></Route>
+            <Route path='/Main' element={<HomePage/>}></Route>
             <Route path='/MapPage' element={<MapPage/>}></Route>
             <Route path='/AdoptPage' element={<AdoptPage/>}></Route>
             <Route path='/ProfilePage' element={<ProfilePage/>}></Route>

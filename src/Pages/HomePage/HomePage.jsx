@@ -1,6 +1,7 @@
 import "./HomePage.scss"
 import React from 'react'
 import NewsGalleyHomeComponent from "../../Components/NewsGalleyHomeComponent/NewsGalleyHomeComponent";
+import NavbarComponent from "../../Components/NavbarComponent/NavbarComponent";
 
 
 
@@ -15,6 +16,7 @@ const HomePage = () => {
 
       </div>
         <NewsGalleyHomeComponent/>
+        <NavbarComponent/>
 
     </div>
 

@@ -43,7 +43,7 @@ function SpinnerComponent() {
         </>
       ) : (
         <>
-          <ElectionPage/>
+          {/* <ElectionPage/> */}
         </>
       )}
     </>

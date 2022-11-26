@@ -2,6 +2,7 @@ import React from 'react'
 import ButtonBlueUsers from "../../Components/ButtonBlueUsers/ButtonBlueUsers"
 import "./ProfilePage.scss"
 import { getCookieUtil } from "../../utils/getCookieUtil";
+import NavbarComponent from '../../Components/NavbarComponent/NavbarComponent';
 
 const ProfilePage = () => {
 
@@ -38,6 +39,7 @@ const ProfilePage = () => {
           <ButtonBlueUsers title={"Donar"} route={"MainPage"} img={"./assets/icons/donate.png"}></ButtonBlueUsers>
         </div>
       </div>
+      <NavbarComponent/>
     </div>
   )
 }

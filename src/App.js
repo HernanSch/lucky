@@ -29,6 +29,7 @@ function App() {
         <SpinnerComponent/>
         {/* <ElectionPage/> */}
 
+
       </header>
       <main>
       {/* <RequireAuth/> */}

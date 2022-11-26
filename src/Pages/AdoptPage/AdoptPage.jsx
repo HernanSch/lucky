@@ -12,18 +12,15 @@ const AdoptPage = () => {
    
     const [allPets, setPets] = useState([]);
     const [searchPet, setSearchPet] = useState([]);
-     
 
     useEffect(() => {
         const getData = async () => {
-            const { data } = await axios.get("http://localhost:9000/pets");
+            const { data } = await axios.get("http://localhost:8000/pets");
             setPets(data);
-
         };
         getData()
 
     }, []);
-    
 
     const filterPets = allPets.filter((pets) => pets.name.toLowerCase().includes(searchPet)) // esto es el filtro 4
 
@@ -33,8 +30,7 @@ const AdoptPage = () => {
                 <Search setSearchPj={setSearchPet}></Search>
                 
             </div>  
-            <div className="p-adopt-container">
-                
+            <div className="p-adopt-container">     
                 <div>
                     <div>
                         <h3>Animales en adopcion</h3>
@@ -69,12 +65,6 @@ const AdoptPage = () => {
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-
             </div>
             <NavbarComponent />
         </>

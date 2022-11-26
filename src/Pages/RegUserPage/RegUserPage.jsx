@@ -6,8 +6,12 @@ const RegUserPage = () => {
   return (
     <div className='p-reguser-container'>
         <RegUserComponent/>
+        {/* <AuthButton></AuthButton> */}
+    
     </div>
   )
 }
+
+
 
 export default RegUserPage

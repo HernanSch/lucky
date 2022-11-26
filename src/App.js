@@ -32,21 +32,20 @@ function App() {
     <div>
       <header>
 
-        {/* <SpinnerComponent/> */}
-        {/* <ElectionPage/> */}
+        <SpinnerComponent/>
 
 
       </header>
       <main>
       {/* <RequireAuth/> */}
         <Routes>
-          <Route path='/LoginUserPage' element={<LoginUserPage/>}></Route>
-          <Route path='/LoginAsocPage' element={<LoginAsocPage/>}></Route>
-          <Route path='/RegUserPage' element={<RegUserPage/>}></Route>
-          <Route path='/RegAsocPage' element={<RegAsocPage/>}></Route>
-          <Route path='/' element={<OnboardingPage/>}></Route>
-          <Route path='/Election' element={<ElectionPage/>}></Route>
-          <Route path='/Main' element={<MainPage/>}></Route>
+            <Route path='/LoginUserPage' element={<LoginUserPage/>}></Route>
+            <Route path='/LoginAsocPage' element={<LoginAsocPage/>}></Route>
+            <Route path='/RegUserPage' element={<RegUserPage/>}></Route>
+            <Route path='/RegAsocPage' element={<RegAsocPage/>}></Route>
+            <Route path='/' element={<OnboardingPage/>}></Route>
+            <Route path='/Election' element={<ElectionPage/>}></Route>
+            <Route path='/Main' element={<MainPage/>}></Route>
             <Route path='/MapPage' element={<MapPage/>}></Route>
             <Route path='/AdoptFormPage' element={<AdoptFormPage/>}></Route>
             <Route path='/AdoptPage' element={<AdoptPage/>}></Route>

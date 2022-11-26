@@ -21,7 +21,7 @@ const LoginUserComponent = () => {
              document.cookie = 'user=' +  JSON.stringify(res.data.userInfo);
              setUser(res.data.userInfo)
             setIsLogged(res.data.token);
-            setIsLogged ? navigate("/home") : alert("error")
+            setIsLogged ? navigate("/Main") : alert("error")
         })
     }
   return (

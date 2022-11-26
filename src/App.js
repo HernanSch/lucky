@@ -15,6 +15,7 @@ import MorePage from './Pages/MorePage/MorePage';
 import MapPage from './Pages/MapPage/MapPage';
 import ProfilePage from './Pages/ProfilePage/ProfilePage';
 import AdoptPage from './Pages/AdoptPage/AdoptPage';
+import SpinnerComponent from './Components/SpinnerComponent/SpinnerComponent';
 
 
 function App() {
@@ -29,8 +30,9 @@ function App() {
     <div>
       <header>
 
-        {/* <SpinnerComponent/> */}
+        <SpinnerComponent/>
         {/* <ElectionPage/> */}
+
 
       </header>
       <main>
@@ -43,7 +45,6 @@ function App() {
           <Route path='/' element={<OnboardingPage/>}></Route>
           <Route path='/Election' element={<ElectionPage/>}></Route>
           <Route path='/Main' element={<MainPage/>}></Route>
-            <Route path='/Home' element={<HomePage/>}></Route>
             <Route path='/MapPage' element={<MapPage/>}></Route>
             <Route path='/AdoptPage' element={<AdoptPage/>}></Route>
             <Route path='/ProfilePage' element={<ProfilePage/>}></Route>

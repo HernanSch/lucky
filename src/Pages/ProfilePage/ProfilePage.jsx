@@ -1,5 +1,6 @@
 import React from 'react'
 import ButtonBlueUsers from "../../Components/ButtonBlueUsers/ButtonBlueUsers"
+import NavbarComponent from '../../Components/NavbarComponent/NavbarComponent'
 import "./ProfilePage.scss"
 import { getCookieUtil } from "../../utils/getCookieUtil";
 
@@ -38,6 +39,7 @@ const ProfilePage = () => {
           <ButtonBlueUsers title={"Donar"} route={"MainPage"} img={"./assets/icons/donate.png"}></ButtonBlueUsers>
         </div>
       </div>
+      <NavbarComponent/>
     </div>
   )
 }

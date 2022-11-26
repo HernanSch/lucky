@@ -10,24 +10,29 @@ import OnboardingPage from './Pages/OnboardingPage/OnboardingPage';
 import ElectionPage from './Pages/ElectionPage/ElectionPage';
 import LoginAsocPage from './Pages/LoginAsocPage/LoginAsocPage';
 import LoginUserPage from './Pages/LoginUserPage/LoginUserPage';
-import HomePage from './Pages/HomePage/HomePage';
 import MorePage from './Pages/MorePage/MorePage';
 import MapPage from './Pages/MapPage/MapPage';
 import ProfilePage from './Pages/ProfilePage/ProfilePage';
 import AdoptPage from './Pages/AdoptPage/AdoptPage';
+import PetDetailPage from './Pages/PetDetailPage/PetDetailPage';
 import SpinnerComponent from './Components/SpinnerComponent/SpinnerComponent';
 
 
 function App() {
   const [isLogged, setIsLogged] = useState(!!getCookieUtil('token'));
+  const [user,setUser] = useState(null)
+
   return (
-    <IsLoggedContext.Provider value={{ isLogged, setIsLogged }}>
+    <IsLoggedContext.Provider value={{ isLogged, setIsLogged,user,setUser }}>
+    
+
       <Router>
     <div>
       <header>
 
-        <SpinnerComponent/>
+        {/* <SpinnerComponent/> */}
         {/* <ElectionPage/> */}
+
 
       </header>
       <main>
@@ -42,6 +47,7 @@ function App() {
           <Route path='/Main' element={<MainPage/>}></Route>
             <Route path='/MapPage' element={<MapPage/>}></Route>
             <Route path='/AdoptPage' element={<AdoptPage/>}></Route>
+            <Route path='/AdoptPage/:id' element={<PetDetailPage/>}></Route>
             <Route path='/ProfilePage' element={<ProfilePage/>}></Route>
             <Route path='/MorePage' element={<MorePage/>}></Route>
           </Routes>

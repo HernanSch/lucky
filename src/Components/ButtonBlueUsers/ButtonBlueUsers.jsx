@@ -8,7 +8,7 @@ const ButtonBlueUsers = ({title,img,route}) => {
     <div>
 
        <button className="c-button-users" onClick={() => navigate(`/${route}`)}>
-       <img src={img} alt=""></img> {title} </button>
+       <div><img src={img} alt=""></img> {title}</div><div> <i className="fa fa-chevron-right" aria-hidden="true"></i></div> </button>
     </div>
   )
 }

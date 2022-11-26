@@ -9,7 +9,9 @@ export default function AuthButton () {
     const {isLogged, setIsLogged} = useContext(IsLoggedContext);
     
     const stringUser = getCookieUtil('user');
+    
     const user = JSON.parse(stringUser ? stringUser : '{}');
+    console.log(user?.photo)
 
     const signOut = () => {
         removeCookieUtil('user');

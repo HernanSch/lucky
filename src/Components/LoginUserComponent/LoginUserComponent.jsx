@@ -9,7 +9,8 @@ const LoginUserComponent = () => {
     const navigate = useNavigate();
     const { register, handleSubmit } = useForm();
     
-    const {setIsLogged} = useContext(IsLoggedContext);
+    const {setIsLogged,setUser} = useContext(IsLoggedContext);
+    
     console.log("hola")
 
     const onSubmit = formData => {
@@ -18,8 +19,9 @@ const LoginUserComponent = () => {
               // console.log(res.data.userInfo)
              document.cookie = 'token=' + res.data.token;
              document.cookie = 'user=' +  JSON.stringify(res.data.userInfo);
-             
-            setIsLogged(true);
+             setUser(res.data.userInfo)
+            setIsLogged(res.data.token);
+            setIsLogged ? navigate("/home") : alert("error")
         })
     }
   return (
@@ -38,8 +40,8 @@ const LoginUserComponent = () => {
                    })}/> 
            
 
-            
-            <button type="submit" onClick={() => navigate("/Main")}>Login</button>
+           <button type="submit" >Login</button>
+            {/* <button type="submit" onClick={() => navigate("/Main")}>Login</button> */}
         </form>
       </div>
   )

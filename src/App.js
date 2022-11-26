@@ -48,7 +48,7 @@ function App() {
           <Route path='/Election' element={<ElectionPage/>}></Route>
           <Route path='/Main' element={<MainPage/>}></Route>
             <Route path='/MapPage' element={<MapPage/>}></Route>
-            <Route path='/AdoptPage' element={<AdoptFormPage/>}></Route>
+            <Route path='/AdoptFormPage' element={<AdoptFormPage/>}></Route>
             <Route path='/AdoptPage' element={<AdoptPage/>}></Route>
             <Route path='/AdoptPage/:id' element={<PetDetailPage/>}></Route>
             <Route path='/ProfilePage' element={<ProfilePage/>}></Route>

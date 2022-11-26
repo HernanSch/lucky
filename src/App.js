@@ -15,7 +15,7 @@ import MorePage from './Pages/MorePage/MorePage';
 import MapPage from './Pages/MapPage/MapPage';
 import ProfilePage from './Pages/ProfilePage/ProfilePage';
 import AdoptPage from './Pages/AdoptPage/AdoptPage';
-
+import AdoptFormPage from './Pages/AdoptFormPage/AdoptFormPage';
 
 function App() {
   const [isLogged, setIsLogged] = useState(!!getCookieUtil('token'));
@@ -44,6 +44,7 @@ function App() {
             <Route path='/AdoptPage' element={<AdoptPage/>}></Route>
             <Route path='/ProfilePage' element={<ProfilePage/>}></Route>
             <Route path='/MorePage' element={<MorePage/>}></Route>
+            <Route path='/AdoptFormPage' element={<AdoptFormPage/>}></Route>
           </Routes>
 
 

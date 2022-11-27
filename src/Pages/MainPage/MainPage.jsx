@@ -12,7 +12,7 @@ const MainPage = () => {
       <div className="p-main-holder">
         <div className='p-main-carousel'>
           <div className='p-main-carousel__items'>
-          <HelloUserComponent/>
+           <HelloUserComponent/>
           <img src='./assets/images/homecar.png' alt='img'/>
           </div>
           <div className='p-main-line'></div>

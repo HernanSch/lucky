@@ -1,0 +1,17 @@
+@import './../../scss/colors.scss';
+
+.c-adoption-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 100vw;
+    color: black;
+}
+.c-adoption-holder{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 100vw;
+}

@@ -11,7 +11,7 @@ const LoginUserComponent = () => {
     
     const {setIsLogged,setUser} = useContext(IsLoggedContext);
     
-    console.log("hola")
+    
 
     const onSubmit = formData => {
       console.log(formData)
@@ -21,6 +21,7 @@ const LoginUserComponent = () => {
              document.cookie = 'user=' +  JSON.stringify(res.data.userInfo);
              setUser(res.data.userInfo)
             setIsLogged(res.data.token);
+            console.log(res.data.token)
             setIsLogged ? navigate("/Main") : alert("error")
         })
     }

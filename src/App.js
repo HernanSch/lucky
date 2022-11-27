@@ -30,9 +30,10 @@ import AdoptionStatusPage from './Pages/AdoptionStatusPage/AdoptionStatusPage';
 function App() {
   const [isLogged, setIsLogged] = useState(!!getCookieUtil('token'));
   const [user,setUser] = useState(null)
+  const [protector,setProtector] = useState(null)
 
   return (
-    <IsLoggedContext.Provider value={{ isLogged, setIsLogged,user,setUser }}>
+    <IsLoggedContext.Provider value={{ isLogged, setIsLogged,user,setUser,protector,setProtector }}>
     
 
       <Router>

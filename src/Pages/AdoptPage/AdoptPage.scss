@@ -60,8 +60,7 @@
     border-radius: 5px;
     &__img {
         width: 330px;
-        height: 210px;
-        
+        height: 210px;   
     }
     &__img  img{
         overflow: hidden;
@@ -92,6 +91,16 @@
         font-weight: 600;
         padding: 10px;
     }
+    & button {
+        background-color: transparent;
+        position: relative;
+        right: -290px;
+        top: -470px;
+    }
+    & button img {
+        width: 24px;
+    }
+
 }   
     .c-adopt-gallery-holder{
         width: 100vw;

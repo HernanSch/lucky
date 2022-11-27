@@ -33,9 +33,13 @@ const AdoptPage = () => {
                <SearchComponent setSearchPj={setSearchPet}></SearchComponent>  
                 <div className="p-adopt-holder"> 
                     <div className="p-adopt-menu">
+                    <ButtonBlueUsers title={"Estado de la adopción"} route={"AdoptionStatusPage"} img={"./assets/icons/empty.png"}></ButtonBlueUsers>
+                      <div className="p-adopt-menu__filter">
                         <h6>Animales en adopcion</h6>
-                        <button className="c-button-login" onClick={() => navigate("/Filter")}>Filter </button>
-                        <ButtonBlueUsers title={"Estado de la adopción"} route={"MainPage"} img={"./assets/icons/donate.png"}></ButtonBlueUsers>
+                        <button className="p-button-filter" onClick={() => navigate("/Filter")}></button>
+                      </div>
+                        
+                        
                         
                     </div>
                     <SimpleBar className="c-adopt-gallery-holder">

@@ -17,11 +17,29 @@
 }
 .p-adopt-menu {
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
     width: 100vw;
     height: 26vh;
+    &__filter {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 80vw;
+        margin-top: 10px;
+    }
+    & h6 {
+        color: $ocean-color;
+    }
+}
+.p-button-filter {
+    background-color: transparent;
+    background-image: url(./../../../public/assets/icons/filter.png);
+    background-size: contain;
+    width: 24px;
+    height: 24px;
 }
 .p-adopt-gallery {
     width: 100vw;

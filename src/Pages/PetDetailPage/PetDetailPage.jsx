@@ -19,6 +19,7 @@ const PetDetailPage = () => {
    
     getPetById();
     },[]);
+    console.log(pet.animalProtectors)
 
   return (
     <div>
@@ -29,7 +30,8 @@ const PetDetailPage = () => {
         <h1>{pet.species}</h1>  
         <h1>{pet.category}</h1>   
         <h1>{pet.condition}</h1>
-        <h1>{pet.city}</h1>             
+        <h1>{pet.city}</h1>
+        <h1>{pet.animalProtectors}</h1>             
       
       </div>
            

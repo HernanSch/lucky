@@ -1,9 +1,3 @@
-
-
-import AdoptFormPage from "../AdoptFormPage/AdoptFormPage"
-import "./AdoptPage.scss"
-import React from "react"
-
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -14,7 +8,6 @@ import SimpleBar from 'simplebar-react';
 
 import "./AdoptPage.scss"
 import ButtonBlueUsers from "../../Components/ButtonBlueUsers/ButtonBlueUsers";
-
 
 
 
@@ -35,11 +28,6 @@ const AdoptPage = () => {
     const filterPets = allPets.filter((pets) => pets.name.toLowerCase().includes(searchPet)) // esto es el filtro 4
 
     return (
-        <>
-    <div className="p-adopt-container">
-      <AdoptFormPage></AdoptFormPage>
-    </div>
-    </>
         <>
             <div className="p-adopt-container">
                <SearchComponent setSearchPj={setSearchPet}></SearchComponent>  
@@ -76,7 +64,6 @@ const AdoptPage = () => {
             <NavbarComponent />
         </>
     )
-
 }
 
 export default AdoptPage

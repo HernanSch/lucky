@@ -2,28 +2,32 @@ import "./FilterPage.scss"
 import React from 'react'
 import { useEffect,useState } from 'react'
 
+
 const FilterPage = () => {
 
-const perro = false;
-const gato = false;
-const pajaro = false;
-const macho = false;
-const hembra = false;
-const pequeño = false;
-const grande = false;
-const mediano = false;
-const dogFunc = () =>( perro = !perro);
+let perro = false;
+let gato = false;
+let pajaro = false;
+let macho = false;
+let hembra = false;
+let pequeño = false;
+let grande = false;
+let mediano = false;
+
+const dogFunc = () => {perro = !perro}
 const catFunc = () => gato = !gato;
 const birdFunc = () => pajaro = !pajaro;
-const machoFunc = () =>( macho = !macho ,  hembra = false)
-const hembraFunc = () =>( hembra = !hembra ,  macho = false)
-const pequeFunc = () =>( pequeño = !pequeño ,  mediano = false , grande = false)
-const medianoFunc = () =>( mediano = !mediano ,  pequeño = false , grande = false)
-const grandeFunc = () =>( grande = !grande ,  mediano = false , pequeño = false)
-const cons = () => console.log(perro);
+const machoFunc = () => {macho = !macho ;  hembra = false}
+const hembraFunc = () => {hembra = !hembra ; macho = false}
+const pequeFunc = () =>{ pequeño = !pequeño ;  mediano = false ; grande = false}
+const medianoFunc = () =>{mediano = !mediano ;  pequeño = false ; grande = false}
+const grandeFunc = () => {grande = !grande ; mediano = false ; pequeño = false}
+const cons = () => {console.log(macho); console.log(hembra)}
 const species = []
 const sex = ""
 const size = ""
+
+
 
 const filtroFunc = () => {
 if(perro){

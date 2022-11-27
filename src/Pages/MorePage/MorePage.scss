@@ -25,11 +25,14 @@
 .button-container button {
     max-width: 400px;
 }
-.button-container__auth{
+.button-container__auth {
     display: flex;
     flex-direction: column;
     margin-top: 20vh;
     
 }
-   
+.button-container__auth button {
+    max-width: 400px;
+}
+    
 

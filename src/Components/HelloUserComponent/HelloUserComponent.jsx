@@ -15,7 +15,7 @@ export default function HelloUserComponent () {
     
 
     return isLogged ? (
-        <h5>Hola! {user.name} </h5>
+        <h5>¡Hola {user.name}!</h5>
     ) : (
         <h5>You are not logged in.</h5>
     );

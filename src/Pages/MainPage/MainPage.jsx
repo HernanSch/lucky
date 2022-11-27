@@ -11,7 +11,11 @@ const MainPage = () => {
     <div className="p-main-container">
       <div className="p-main-holder">
         <div className='p-main-carousel'>
-        <HelloUserComponent/>
+          <div className='p-main-carousel__items'>
+          <HelloUserComponent/>
+          <img src='./assets/images/homecar.png' alt='img'/>
+          </div>
+          <div className='p-main-line'></div>
         </div>
         <NewsGalleyHomeComponent/>
       </div>

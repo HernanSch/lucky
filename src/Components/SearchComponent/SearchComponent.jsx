@@ -1,4 +1,5 @@
 import React from 'react'
+import "./SearchComponent.scss"
 
 const SearchComponent = ({setSearchPj}) => { // aqui el nombre 2º
     const handleFind = (event) => {
@@ -6,9 +7,11 @@ const SearchComponent = ({setSearchPj}) => { // aqui el nombre 2º
     }
   return (
 
-    <div className="search">
-        <input className="searchTerm" onChange={handleFind} type="text" placeholder="Buscar"/>
-        <i class="fa fa-search"></i>
+    <div className="c-search-container">
+        <div className="c-search-holder">
+          <input className="searchTerm" onChange={handleFind} type="text" placeholder="Buscar"/>
+          <i class="fa fa-search"></i>
+        </div>
     </div>
 
   )

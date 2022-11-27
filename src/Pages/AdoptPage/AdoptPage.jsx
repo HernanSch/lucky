@@ -2,19 +2,18 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import NavbarComponent from "../../Components/NavbarComponent/NavbarComponent"
-import SearchComponent from "../../Components/Search/SearchComponent";
-import Search from "../../Components/Search/SearchComponent";
+import SearchComponent from "../../Components/SearchComponent/SearchComponent";
 import SimpleBar from 'simplebar-react';
 
 import "./AdoptPage.scss"
 import ButtonBlueUsers from "../../Components/ButtonBlueUsers/ButtonBlueUsers";
 
 
-
 const AdoptPage = () => {
     const navigate = useNavigate();
     const [allPets, setPets] = useState([]);
     const [searchPet, setSearchPet] = useState([]);
+    
 
     useEffect(() => {
         const getData = async () => {
@@ -26,13 +25,20 @@ const AdoptPage = () => {
     }, []);
 
     const filterPets = allPets.filter((pets) => pets.name.toLowerCase().includes(searchPet)) // esto es el filtro 4
-
+    
     return (
         <>
             <div className="p-adopt-container">
                <SearchComponent setSearchPj={setSearchPet}></SearchComponent>  
                 <div className="p-adopt-holder"> 
+                    
                     <div className="p-adopt-menu">
+                        <div className="p-adopt-pets">
+                            <a href="/">Mis mascotas<img src="./assets/icons/mS.png" alt='more'/></a>
+                            <p>Accede al perfil de tus mascotas</p>
+                            <img src="./assets/images/animals.png" alt='carousel'/>
+                            
+                        </div>
                     <ButtonBlueUsers title={"Estado de la adopción"} route={"AdoptionStatusPage"} img={"./assets/icons/empty.png"}></ButtonBlueUsers>
                       <div className="p-adopt-menu__filter">
                         <h6>Animales en adopcion</h6>
@@ -43,7 +49,7 @@ const AdoptPage = () => {
                         <div className="c-adopt-gallery-holder__box">
                                 {filterPets.map((item, index) => {
                                     return (
-                                        <div className="c-adopt-gallery-card">
+                                    <div className="c-adopt-gallery-card">
                                         <Link to={`/AdoptPage/${item._id}`}>
                                             <div className="c-adopt-gallery-card__img" >
                                                     <img className="image" src={item.photo} alt={item.name} />
@@ -53,8 +59,7 @@ const AdoptPage = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                        </div>
-                                        
+                                    </div> 
                                     )
                                 })}
                             </div>                        

@@ -16,52 +16,59 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 70vh;
-    margin-top: -20vh
+    height: 100vh;
+    width: 100vw;
+    margin-top: -30vh;
+    &__img {
+        height: 156px;
+        width:  238px;
+    }
+    &__caption {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 40vh;
+        margin-top: 10vh;
+    &__caption h4 {
+        color: $ocean-color !important;
+        height: 90px;
+        width: 256px;
+        font-size: 25px;
+    }
+    &__caption p {
+        color: $black-color !important;
+         font-size: 16px;
+    
+    }             
+    }
 }
-.carousel{
+.o-c-holder {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     height: 90vh;
     width: 100vw;
 }
 
-.carousel-indicators [data-bs-target]{  
+.carousel-indicators [data-bs-target] {  
     width: 15px !important;
     height: 15px !important;
     background-color: rgb(250, 156, 147) !important;
     border-radius: 50% !important;
     margin: 5px;
 }
-.d-block{
-    height: 156px;
-    width:  238px;
-}
-.carousel-item{
-    h1{
+
+
+.o-c-card__caption {
+    display: flex;
+    & h4 {
         color: $ocean-color !important;
-        height: 90px;
-        width: 256px;
         font-size: 25px;
     }
-    p{
+    & p {
         color: $black-color !important;
-        font-size: 16px;
-
-    }    
-    }
-.carousel-caption{
-    color: $ocean-color !important;
-        
+         font-size: 14px;
+    } 
 }
-.carousel-control-prev-icon {
-    color: transparent !important;
-    background-color: transparent !important;
-} 
-.carousel-control-next-icon {
-    color: transparent !important;
-    background-color: transparent !important;
-}  
-
 

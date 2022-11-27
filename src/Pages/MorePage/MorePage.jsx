@@ -4,6 +4,7 @@ import NavbarComponent from "../../Components/NavbarComponent/NavbarComponent"
 import ButtonBlueUsers from "../../Components/ButtonBlueUsers/ButtonBlueUsers"
 import { useNavigate } from 'react-router-dom';
 import ButtonLogoutComponent from "../../Components/ButtonLogoutComponent/ButtonLogoutComponent";
+import AuthButton from "../../Components/AuthButton/AuthButton"
 
 const MorePage = () => {
   const navigate = useNavigate();
@@ -31,12 +32,12 @@ const MorePage = () => {
             <AuthButton></AuthButton>
         </div>
 
-      <div  className='p-more-holder'>
+        <div className='p-more-holder'>
             <div className='button-container'>
-            <ButtonBlueUsers title={"Asociaciones Protectoras"} route={"MainPage"} img={"./assets/icons/protectora.png"}></ButtonBlueUsers>
+              <ButtonBlueUsers title={"Asociaciones Protectoras"} route={"MainPage"} img={"./assets/icons/protectora.png"}></ButtonBlueUsers>
             </div>
             <div className='button-container'>
-            <ButtonBlueUsers title={"Eventos"} route={"MainPage"} img={"./assets/icons/events.png"}></ButtonBlueUsers>
+              <ButtonBlueUsers title={"Eventos"} route={"MainPage"} img={"./assets/icons/events.png"}></ButtonBlueUsers>
             </div>
             <div className='button-container'>
             <ButtonBlueUsers title={"Curiosidades"} route={"MainPage"} img={"./assets/icons/blog.png"}></ButtonBlueUsers>
@@ -52,6 +53,7 @@ const MorePage = () => {
       </div>
         
       <NavbarComponent/>
+    </div>
     </div>
   )
 }

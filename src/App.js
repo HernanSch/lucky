@@ -46,6 +46,7 @@ function App() {
       <main>
       {/* <RequireAuth/> */}
         <Routes>
+        
             <Route path='/LoginUserPage' element={<LoginUserPage/>}></Route>
             <Route path='/LoginAsocPage' element={<LoginAsocPage/>}></Route>
             <Route path='/RegUserPage' element={<RegUserPage/>}></Route>

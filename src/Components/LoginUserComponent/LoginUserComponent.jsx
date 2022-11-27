@@ -16,7 +16,7 @@ const LoginUserComponent = () => {
     const onSubmit = formData => {
       console.log(formData)
         API.post('users/login', formData).then(res => {
-              // console.log(res.data.userInfo)
+              console.log(res.data.userInfo)
              document.cookie = 'token=' + res.data.token;
              document.cookie = 'user=' +  JSON.stringify(res.data.userInfo);
              setUser(res.data.userInfo)

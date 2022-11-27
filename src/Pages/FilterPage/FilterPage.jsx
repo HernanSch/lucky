@@ -3,16 +3,51 @@ import React from 'react'
 import { useEffect,useState } from 'react'
 
 const FilterPage = () => {
-  const [petsFiltro,setPetsFiltro] = useState([])
-const [busqueda, setBusqueda] = useState("")
-const [pets, setPets] = useState([])
+
 const perro = false;
 const gato = false;
-const ballena = false;
 const pajaro = false;
-const dogFunc = () => !perro;
+const macho = false;
+const hembra = false;
+const pequeño = false;
+const grande = false;
+const mediano = false;
+const dogFunc = () =>( perro = !perro);
+const catFunc = () => gato = !gato;
+const birdFunc = () => pajaro = !pajaro;
+const machoFunc = () =>( macho = !macho ,  hembra = false)
+const hembraFunc = () =>( hembra = !hembra ,  macho = false)
+const pequeFunc = () =>( pequeño = !pequeño ,  mediano = false , grande = false)
+const medianoFunc = () =>( mediano = !mediano ,  pequeño = false , grande = false)
+const grandeFunc = () =>( grande = !grande ,  mediano = false , pequeño = false)
 const cons = () => console.log(perro);
+const species = []
+const sex = ""
+const size = ""
 
+const filtroFunc = () => {
+if(perro){
+  species.push("perro")
+}
+if(gato){
+  species.push("gato")
+}
+if(pajaro){
+  species.push("pajaro")
+}
+if(macho){
+  sex = "macho"
+}else if(hembra){
+  sex = "hembra "
+}
+if(pequeño){
+  size = "pequeño"
+}else if(mediano){
+  size = "mediano"
+}else if(grande){
+  size = "grande"
+}
+}
 
  
   return (
@@ -20,7 +55,24 @@ const cons = () => console.log(perro);
     <h2>Filtros</h2>
     <button onClick={() => {dogFunc()}}>perro</button>
     <br></br>
+    <button onClick={() => {catFunc()}}>gato</button>
+    <br></br>
+    <button onClick={() => {birdFunc()}}>pajaro</button>
+    <br></br>
     <button onClick={() => {cons()}}>perest</button>
+    <br></br>
+    <button onClick={() => {machoFunc()}}>macho</button>
+      <br></br>
+    <button onClick={() => {hembraFunc()}}>hembra</button>
+    <br></br>
+    <button onClick={() => {pequeFunc()}}>pequeño</button>
+    <br></br>
+    <button onClick={() => {medianoFunc()}}>mediano</button>
+    <br></br>
+    <button onClick={() => {grandeFunc()}}>grande</button>
+    <br></br>
+
+    <button onClick={() =>{filtroFunc()}}>filtro</button>
    
     </div>
   

@@ -2,6 +2,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import FormNavComponent from '../../Components/FormNavComponent/FormNavComponent';
+import './CFormPage.scss'
 
 
 const CFormPage = () => {
@@ -12,14 +13,19 @@ const CFormPage = () => {
   return (
     
       <form onSubmit={handleSubmit(onSubmit)}>
-      <div>  <FormNavComponent></FormNavComponent></div>
+      <div className='form-adoptC'>
+       {/* <FormNavComponent></FormNavComponent> */}
       <h1>Familia y hogar</h1>
       <h3>¿Dónde vives?</h3>
       <input type="text" placeholder="Piso,casa,chalet..." {...register("Piso,casa,chalet", {required: true})} />
-      <div>
-      <p>¿Vives de alquiler?</p>
-      <p>Si<input {...register("Si", { required: true })} type="radio" value="Yes" /></p>
-      <p>No<input {...register("No", { required: true })} type="radio" value="No" /></p>
+      <div className='preguntas-sino'>
+        <div>
+          <p>¿Vives de alquiler?</p>
+        </div>
+        <div>
+           <p>Si<input {...register("Si", { required: true })} type="radio" value="Yes" /></p>
+           <p>No<input {...register("No", { required: true })} type="radio" value="No" /></p>
+        </div>
       </div>
       <div>
       <p>¿Tu casero permite animales?</p>
@@ -64,7 +70,7 @@ const CFormPage = () => {
       <div>
        <button className="c-button-siguiente" onClick={() => navigate("/CFormPage")}>ENVIAR</button>
     </div>
-
+    </div>
     </form>
   )
 

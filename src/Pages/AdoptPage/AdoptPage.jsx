@@ -37,10 +37,7 @@ const AdoptPage = () => {
                       <div className="p-adopt-menu__filter">
                         <h6>Animales en adopcion</h6>
                         <button className="p-button-filter" onClick={() => navigate("/Filter")}></button>
-                      </div>
-                        
-                        
-                        
+                      </div>   
                     </div>
                     <SimpleBar className="c-adopt-gallery-holder">
                         <div className="c-adopt-gallery-holder__box">
@@ -65,7 +62,7 @@ const AdoptPage = () => {
                 </div>
             </div> 
             <NavbarComponent />
-            </>
+        </>
     )
 }
 

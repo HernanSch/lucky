@@ -2,11 +2,11 @@ import "./MorePage.scss"
 import React from 'react'
 import NavbarComponent from "../../Components/NavbarComponent/NavbarComponent"
 import ButtonBlueUsers from "../../Components/ButtonBlueUsers/ButtonBlueUsers"
-import { useNavigate } from 'react-router-dom';
+
 import ButtonLogoutComponent from "../../Components/ButtonLogoutComponent/ButtonLogoutComponent";
 
 const MorePage = () => {
-  const navigate = useNavigate();
+  
   return (
     <div className="p-more-container">
       <div  className='button-container1'>
@@ -27,9 +27,7 @@ const MorePage = () => {
           <ButtonBlueUsers title={"Configuracion"} route={"MainPage"} img={"./assets/icons/setting.png"}></ButtonBlueUsers>
           </div>
         </div>
-        <div className="contenedor2">
-            <AuthButton></AuthButton>
-        </div>
+        
 
       <div  className='p-more-holder'>
             <div className='button-container'>
@@ -52,6 +50,7 @@ const MorePage = () => {
       </div>
         
       <NavbarComponent/>
+    </div>
     </div>
   )
 }

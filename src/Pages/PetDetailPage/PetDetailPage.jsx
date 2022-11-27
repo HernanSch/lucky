@@ -12,7 +12,7 @@ const PetDetailPage = () => {
 
   useEffect(() => {
     const getPetById = async () =>{
-      const {data} = await axios.get(`http://localhost:9000/pets/${id}`)
+      const {data} = await axios.get(`http://localhost:8000/pets/${id}`)
       console.log(data.pet)
       setPet(data.pet);            
     };
@@ -21,14 +21,15 @@ const PetDetailPage = () => {
     },[]);
 
   return (
-    <div>PetDetailPage
+    <div>
     <div className='Container'> 
       <div className='petsContainer'>
-        <h1>prueba</h1>
-            
-        <img src={pet.photo} alt="" />
-        <h1>{pet.name}</h1>
+        <h1>{pet.name}</h1>        
+        <img src={pet.photo} alt="" />   
+        <h1>{pet.species}</h1>  
+        <h1>{pet.category}</h1>   
         <h1>{pet.condition}</h1>
+        <h1>{pet.city}</h1>             
       
       </div>
            

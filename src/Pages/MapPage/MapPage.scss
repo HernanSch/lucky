@@ -1,27 +1,10 @@
 @import './../../scss/colors.scss';
 
-/*.c-map-container {
+.c-map-container {
     display: flex;
     width: 100vh;
-    height: 90vh;
+    height: 92vh;
     
-}*/
-html,
-body {
-  
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .places-container {
@@ -35,7 +18,7 @@ a {
 
 .map-container {
   width: 100%;
-  height: 100vh;
+  height:92vh;
 }
 
 .combobox-input {

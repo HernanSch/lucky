@@ -11,6 +11,7 @@ const MorePage = () => {
     <div className="p-more-container">
       <div  className='button-container1'>
         <div className="contenedor1">
+        
           <div className='button-container'>
           <ButtonBlueUsers title={"Asociaciones Protectoras"} route={"MainPage"} img={"./assets/icons/protectora.png"}></ButtonBlueUsers>
           </div>

@@ -15,43 +15,49 @@ function OnboardingPage() {
     setIndex(selectedIndex);
   }
   return (
-    <div>
-      <ButtonXComponent></ButtonXComponent>
     <div className="o-c-container">
+
+      <div className="o-c-button"><ButtonXComponent></ButtonXComponent></div>
+    <div>
 
     <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
       <Carousel.Item interval={1000}>
+      <div className="o-c-card">
         <img
-          className="d-block"
-          src={onboarding1}
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <h1>Encuentra todo tipo de servicios que tienes cerca de ti</h1>
-        </Carousel.Caption>
+            className="d-block"
+            src={onboarding1}
+            alt="First slide"
+          />
+          <Carousel.Caption>
+          <h4>Encuentra todo tipo de servicios que tienes cerca de ti</h4>
+          </Carousel.Caption>
+      </div>
       </Carousel.Item>
       <Carousel.Item interval={500}>
+      <div className="o-c-card">
         <img
           className="d-block"
           src={onboarding2}
           alt="Second slide"
         />
         <Carousel.Caption>
-          <h1>Adopta desde tu móvil</h1>
+          <h4>Adopta desde tu móvil</h4>
           <p>Puedes acceder al perfil de muchos animales que están en adopción y filtrarlos para encontrar el que mejor se adapte a ti</p>
         </Carousel.Caption>
+        </div>
       </Carousel.Item>
       <Carousel.Item>
+      <div className="o-c-card">
         <img
-          className="d-block"
-          src={onboarding3}
-          alt="Third slide"
-        />
+            className="d-block"
+            src={onboarding3}
+            alt="Third slide"
+          />
         <Carousel.Caption>
-          <h1>Si eres una asociación sube a tus peludos para darles más difusión</h1>
+          <h4>Si eres una asociación sube a tus peludos para darles más difusión</h4>
         </Carousel.Caption>
+        </div>
       </Carousel.Item>
-
     </Carousel>
     </div>
     </div>

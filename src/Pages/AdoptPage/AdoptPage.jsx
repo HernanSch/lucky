@@ -50,7 +50,9 @@ const AdoptPage = () => {
                                 {filterPets.map((item, index) => {
                                     return (
                                     <div className="c-adopt-gallery-card">
+                                        
                                         <Link to={`/AdoptPage/${item._id}`}>
+                                        
                                             <div className="c-adopt-gallery-card__img" >
                                                     <img className="image" src={item.photo} alt={item.name} />
                                                 <div className="c-adopt-gallery-card__text">
@@ -58,6 +60,7 @@ const AdoptPage = () => {
                                                     <h6>{item?.condition}</h6>
                                                 </div>
                                             </div>
+                                            <button><img src='./assets/icons/favo.png' alt='favorites'/></button> 
                                         </Link>
                                     </div> 
                                     )

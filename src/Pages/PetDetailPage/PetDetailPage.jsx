@@ -23,10 +23,11 @@ const PetDetailPage = () => {
 
   return (
     <div>
-    <div className='Container'> 
-      <div className='petsContainer'>
-        <h1>{pet.name}</h1>        
-        <img src={pet.photo} alt="" />   
+    <div className='p-petdetail-container'> 
+      <div className='p-petdetail-holder'>
+        <img src={pet.photo} alt={pet.name}/> 
+         
+        <h1>{pet.name}</h1>  
         <h1>{pet.species}</h1>  
         <h1>{pet.category}</h1>   
         <h1>{pet.condition}</h1>

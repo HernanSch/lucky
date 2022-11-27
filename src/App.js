@@ -15,6 +15,10 @@ import MapPage from './Pages/MapPage/MapPage';
 import ProfilePage from './Pages/ProfilePage/ProfilePage';
 import AdoptPage from './Pages/AdoptPage/AdoptPage';
 import SpinnerComponent from './Components/SpinnerComponent/SpinnerComponent';
+import AdoptFormPage from './Pages/AdoptFormPage/AdoptFormPage';
+import BFormPage from './Pages/BFormPage/BFormPage'
+import CFormPage from './Pages/CFormPage/CFormPage'
+
 
 
 function App() {
@@ -48,6 +52,9 @@ function App() {
             <Route path='/AdoptPage' element={<AdoptPage/>}></Route>
             <Route path='/ProfilePage' element={<ProfilePage/>}></Route>
             <Route path='/MorePage' element={<MorePage/>}></Route>
+            <Route path='/AdoptFormPage' element={<AdoptFormPage/>}></Route>
+            <Route path='/BFormPage' element={<BFormPage/>}></Route>
+            <Route path='/CFormPage' element={<CFormPage/>}></Route>
           </Routes>
 
 

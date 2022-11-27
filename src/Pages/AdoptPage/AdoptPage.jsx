@@ -1,14 +1,16 @@
 
-import NavbarComponent from "../../Components/NavbarComponent/NavbarComponent"
+import AdoptFormPage from "../AdoptFormPage/AdoptFormPage"
 import "./AdoptPage.scss"
+import React from "react"
 
 
 
 const AdoptPage = () => {
   return (
     <>
-    <div className="p-adopt-container">AdoptPage</div>
-    <NavbarComponent/>
+    <div className="p-adopt-container">
+      <AdoptFormPage></AdoptFormPage>
+    </div>
     </>
   )
 }

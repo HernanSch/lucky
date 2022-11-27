@@ -18,6 +18,7 @@ import PetDetailPage from './Pages/PetDetailPage/PetDetailPage';
 import SpinnerComponent from './Components/SpinnerComponent/SpinnerComponent';
 import FilterPage from './Pages/FilterPage/FilterPage';
 import AdoptFormPage from './Pages/AdoptFormPage/AdoptFormPage';
+import AdoptionStatusPage from './Pages/AdoptionStatusPage/AdoptionStatusPage';
 
 
 function App() {
@@ -53,6 +54,7 @@ function App() {
             <Route path='/ProfilePage' element={<ProfilePage/>}></Route>
             <Route path='/MorePage' element={<MorePage/>}></Route>
             <Route path='/Filter' element={<FilterPage/>}></Route>
+            <Route path='/AdoptionStatusPage' element={<AdoptionStatusPage/>}></Route>
           </Routes>
 
 

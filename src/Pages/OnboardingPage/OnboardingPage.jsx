@@ -28,7 +28,6 @@ function OnboardingPage() {
             src={onboarding1}
             alt="First slide"
           />
-          
           <Carousel.Caption>
           <h4>Encuentra todo tipo de servicios que tienes cerca de ti</h4>
           </Carousel.Caption>
@@ -49,22 +48,16 @@ function OnboardingPage() {
       </Carousel.Item>
       <Carousel.Item>
       <div className="o-c-card">
-      
         <img
             className="d-block"
             src={onboarding3}
             alt="Third slide"
           />
-      
-        
-        
         <Carousel.Caption>
           <h4>Si eres una asociación sube a tus peludos para darles más difusión</h4>
         </Carousel.Caption>
-        
         </div>
       </Carousel.Item>
-      
     </Carousel>
     </div>
     </div>

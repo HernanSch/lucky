@@ -1,9 +1,3 @@
-
-
-import AdoptFormPage from "../AdoptFormPage/AdoptFormPage"
-import "./AdoptPage.scss"
-import React from "react"
-
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -14,7 +8,6 @@ import SimpleBar from 'simplebar-react';
 
 import "./AdoptPage.scss"
 import ButtonBlueUsers from "../../Components/ButtonBlueUsers/ButtonBlueUsers";
-
 
 
 
@@ -36,11 +29,6 @@ const AdoptPage = () => {
 
     return (
         <>
-    <div className="p-adopt-container">
-      <AdoptFormPage></AdoptFormPage>
-    </div>
-    </>
-        <>
             <div className="p-adopt-container">
                <SearchComponent setSearchPj={setSearchPet}></SearchComponent>  
                 <div className="p-adopt-holder"> 
@@ -49,10 +37,7 @@ const AdoptPage = () => {
                       <div className="p-adopt-menu__filter">
                         <h6>Animales en adopcion</h6>
                         <button className="p-button-filter" onClick={() => navigate("/Filter")}></button>
-                      </div>
-                        
-                        
-                        
+                      </div>   
                     </div>
                     <SimpleBar className="c-adopt-gallery-holder">
                         <div className="c-adopt-gallery-holder__box">
@@ -77,9 +62,8 @@ const AdoptPage = () => {
                 </div>
             </div> 
             <NavbarComponent />
-            </>
+        </>
     )
-
 }
 
 export default AdoptPage

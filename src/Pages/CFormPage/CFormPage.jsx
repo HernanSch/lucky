@@ -11,67 +11,100 @@ const CFormPage = () => {
     const onSubmit = data => console.log(data);
     console.log(errors);
   return (
-    
+    <div className='p-cform-comtainer'>
       <form onSubmit={handleSubmit(onSubmit)}>
-      <div className='form-adoptC'>
+      <div className='p-cform-holder'>
        {/* <FormNavComponent></FormNavComponent> */}
-      <h1>Familia y hogar</h1>
+      <h2>Familia y hogar</h2>
       <h3>¿Dónde vives?</h3>
       <input type="text" placeholder="Piso,casa,chalet..." {...register("Piso,casa,chalet", {required: true})} />
-      <div className='preguntas-sino'>
-        <div>
+      <div className='p-cform-checks'>
+        <div className='p-cform-checks__title'>
           <p>¿Vives de alquiler?</p>
         </div>
-        <div>
-           <p>Si<input {...register("Si", { required: true })} type="radio" value="Yes" /></p>
-           <p>No<input {...register("No", { required: true })} type="radio" value="No" /></p>
+        <div className='p-cform-checks__check'>
+          <span><p>Si</p><input {...register("Si", { required: true })} type="radio" value="Yes" /></span>
+           <span><p>No</p><input {...register("No", { required: true })} type="radio" value="No" /></span>
         </div>
       </div>
-      <div>
+      <div className='p-cform-checks'>
+      <div className='p-cform-checks__title'>
       <p>¿Tu casero permite animales?</p>
-      <p>Si<input {...register("Si", { required: true })} type="radio" value="Yes" /></p>
-      <p>No<input {...register("No", { required: true })} type="radio" value="No" /></p>
       </div>
-      <div>
+      <div className='p-cform-checks__check'>
+      <span><p>Si</p><input {...register("Si", { required: true })} type="radio" value="Yes" /></span>
+      <span><p>No</p><input {...register("No", { required: true })} type="radio" value="No" /></span>
+      </div>
+      </div>
+      <div className='p-cform-checks'>
+      <div className='p-cform-checks__title'>
       <p>¿Crees que podrías mudarte pronto?</p>
-      <p>Si<input {...register("Si", { required: true })} type="radio" value="Yes" /></p>
-      <p>No<input {...register("No", { required: true })} type="radio" value="No" /></p>
       </div>
-      <div>
+      <div className='p-cform-checks__check'>
+      <span><p>Si</p><input {...register("Si", { required: true })} type="radio" value="Yes" /></span>
+      <span><p>No</p><input {...register("No", { required: true })} type="radio" value="No" /></span>
+      </div>
+      </div>
+      <div className='p-cform-checks'>
+      <div className='p-cform-checks__title'>
       <p>¿Tiene jardín?</p>
-      <p>Si<input {...register("Si", { required: true })} type="radio" value="Yes" /></p>
-      <p>No<input {...register("No", { required: true })} type="radio" value="No" /></p>
       </div>
-      <div>
+      <div className='p-cform-checks__check'>
+      <span><p>Si</p><input {...register("Si", { required: true })} type="radio" value="Yes" /></span>
+      <span><p>No</p><input {...register("No", { required: true })} type="radio" value="No" /></span>
+      </div>
+      </div>
+      <div className='p-cform-checks'>
+      <div className='p-cform-checks__title'>
       <p>¿Vives con otras personas?</p>
-      <p>Si<input {...register("Si", { required: true })} type="radio" value="Yes" /></p>
-      <p>No<input {...register("No", { required: true })} type="radio" value="No" /></p>
       </div>
-      <div>
+      <div className='p-cform-checks__check'>
+      <span><p>Si</p><input {...register("Si", { required: true })} type="radio" value="Yes" /></span>
+      <span><p>No</p><input {...register("No", { required: true })} type="radio" value="No" /></span>
+      </div>
+      </div>
+      <div className='p-cform-checks'>
+      <div className='p-cform-checks__title'>
       <p>¿Tu casero permite animales?</p>
-      <p>Si<input {...register("Si", { required: true })} type="radio" value="Yes" /></p>
-      <p>No<input {...register("No", { required: true })} type="radio" value="No" /></p>
       </div>
-      <div>
+      <div className='p-cform-checks__check'>
+      <span><p>Si</p><input {...register("Si", { required: true })} type="radio" value="Yes" /></span>
+      <span><p>No</p><input {...register("No", { required: true })} type="radio" value="No" /></span>
+      </div>
+      </div>
+      <div className='p-cform-checks'>
+      <div className='p-cform-checks__title'>
       <p>¿Estan todos de acuerdo con la adopción?</p>
-      <p>Si<input {...register("Si", { required: true })} type="radio" value="Yes" /></p>
-      <p>No<input {...register("No", { required: true })} type="radio" value="No" /></p>
       </div>
-      <div>
+      <div className='p-cform-checks__check'>
+      <span><p>Si</p><input {...register("Si", { required: true })} type="radio" value="Yes" /></span>
+      <span><p>No</p><input {...register("No", { required: true })} type="radio" value="No" /></span>
+      </div>
+      </div>
+      <div className='p-cform-checks'>
+      <div className='p-cform-checks__title'>
       <p>¿Estan todos de acuerdo con la adopción?</p>
-      <p>Si<input {...register("Si", { required: true })} type="radio" value="Yes" /></p>
-      <p>No<input {...register("No", { required: true })} type="radio" value="No" /></p>
       </div>
-      <div>
+      <div className='p-cform-checks__check'>
+      <span><p>Si</p><input {...register("Si", { required: true })} type="radio" value="Yes" /></span>
+      <span><p>No</p><input {...register("No", { required: true })} type="radio" value="No" /></span>
+      </div>
+      </div>
+      <div className='p-cform-checks'>
+      <div className='p-cform-checks__title'>
       <p>¿Estas de acuerdo con que visitemos tu casa?</p>
-      <p>Si<input {...register("Si", { required: true })} type="radio" value="Yes" /></p>
-      <p>No<input {...register("No", { required: true })} type="radio" value="No" /></p>
+      </div>
+      <div className='p-cform-checks__check'>
+      <span><p>Si</p><input {...register("Si", { required: true })} type="radio" value="Yes" /></span>
+      <span><p>No</p><input {...register("No", { required: true })} type="radio" value="No" /></span>
+      </div>
       </div>
       <div>
-       <button className="c-button-siguiente" onClick={() => navigate("/CFormPage")}>ENVIAR</button>
+       <button className="p-petdetail-button__red" onClick={() => navigate("/CFormPage")}>ENVIAR</button>
     </div>
     </div>
     </form>
+  </div>
   )
 
 }

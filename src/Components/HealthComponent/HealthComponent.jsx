@@ -33,12 +33,28 @@ const HealthComponent = () => {
   return (
     <div className='c-health-container'>
       <div className='c-health-holder'>
-        <h6>Vacunado {vacunado}</h6>  
-        <h6>Desparasitado {desparasitado}</h6>  
-        <h6>Sano {sano}</h6>   
-        <h6>Esterilizado {esterilizado}</h6>
-        <h6>Identificado {identicado}</h6>
-        <h6>Microchip {microchi}</h6>
+        <div className='c-heath-patita'>
+        <div className='c-heath-patita__img'><span>Vacunado</span></div><p>{vacunado}</p>
+        </div>
+        <div className='c-heath-patita'>
+        <div className='c-heath-patita__img'><span>Desparasitado</span></div><p>{desparasitado}</p>
+        </div>
+        <div className='c-heath-patita'>
+        <div className='c-heath-patita__img'><span>Sano</span></div><p>{sano}</p>
+        </div>
+        <div className='c-heath-patita'>
+        <div className='c-heath-patita__img'><span>Esterilizado</span></div><p>{esterilizado}</p>
+        </div> 
+        <div className='c-heath-patita'>
+        <div className='c-heath-patita__img'><span>Identificado</span></div><p>{identicado}</p>
+        </div>
+        <div className='c-heath-patita'>
+        <div className='c-heath-patita__img'><span>Microchip</span></div><p>{microchi}</p>
+        </div> 
+        <div className='c-health-box'>
+            <h6>Tienes que saber</h6>
+            <p>Lorem ipsum dolot</p>
+        </div>
       </div>
           
     </div>

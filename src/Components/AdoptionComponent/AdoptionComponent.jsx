@@ -22,10 +22,18 @@ const AdoptionComponent = () => {
     return (
         <div className='c-adoption-container'>
         <div className='c-adoption-holder'>
-           
-          <h6>{pet.requirements}</h6>  
-          <h6>{pet.adoptionCost}</h6>   
-          <h6>{enviado}</h6> 
+           <div className='c-adoption-box'>
+            <h6>Requisitos para la adopción</h6>
+            <p>{pet.requirements}</p>
+           </div>
+           <div className='c-adoption-box'>
+           <h6>Tasa de adopción adopción</h6>
+            <p>{pet.adoptionCost}</p>
+           </div>
+           <div className='c-adoption-box'>
+           <h6>Tasa de adopción adopción</h6>
+            <p>{enviado}</p>
+           </div>
       </div>
       </div>
     )

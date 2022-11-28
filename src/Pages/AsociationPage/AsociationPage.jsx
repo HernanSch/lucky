@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from 'react'
-import SearchComponent from "../../Components/SearchComponent/SearchComponent";
+// import SearchComponent from "../../Components/SearchComponent/SearchComponent";
 
 const AsociationPage = () => {
 
@@ -11,19 +11,21 @@ const AsociationPage = () => {
         const getData = async () => {
             const { data } = await axios.get("http://localhost:8000/animalProtector/user");
             setProtectors(data);
+            console.log(data)
+                        
         };
         getData()
 
     }, []);
-    const filterPets = allProtectors.filter((protector) => protector.name.toLowerCase().includes(searchProtector))
+    const filterProtectors = allProtectors.filter((protector) => protector.name.toLowerCase().includes(searchProtector))
 
   return (
     <div>AsociationPage
-        <div>
+        {/* <div>
         <SearchComponent setSearchPj={setSearchProtector}></SearchComponent>
-        </div>
+        </div> */}
 
-        {filterPets.map((item, index) => {
+        {filterProtectors.map((item, index) => {
             return (
             <div className="c-adopt-gallery-card">
                 <div className="c-adopt-gallery-card__img" >

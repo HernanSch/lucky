@@ -26,6 +26,7 @@ import FilterPage from './Pages/FilterPage/FilterPage';
 
 import AdoptionStatusPage from './Pages/AdoptionStatusPage/AdoptionStatusPage';
 import AddPetPage from './Pages/AddPetPage/AddPetPage';
+import AsociationPage from './Pages/AsociationPage/AsociationPage';
 
 
 function App() {
@@ -67,6 +68,7 @@ function App() {
             <Route path='/AddPetPage' element={<AddPetPage/>}></Route>
             <Route path='/Filter' element={<FilterPage/>}></Route>
             <Route path='/AdoptionStatusPage' element={<AdoptionStatusPage/>}></Route>
+            <Route path='/AsociationPage' element={<AsociationPage/>}></Route>
 
           </Routes>
 

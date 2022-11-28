@@ -22,6 +22,7 @@
 
 }
 
+
 .c-navbar-button {
     display: flex;
     &__home {
@@ -76,6 +77,16 @@
         background-color: transparent;
         
     }
+}
+.c-navbar-button__home:hover,
+.c-navbar-button__home:focus,
+.c-navbar-button__home:visited {
+    background-image: url(../../../public/assets/icons/home-red.png); 
+}
+.c-navbar-button__map:hover,
+.c-navbar-button__map:focus,
+.c-navbar-button__map:visited {
+    background-image: url(../../../public/assets/icons/mapnav-red.png); 
 }
 
 .active {

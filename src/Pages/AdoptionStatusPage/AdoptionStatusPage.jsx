@@ -6,7 +6,7 @@ import NavbarComponent from "../../Components/NavbarComponent/NavbarComponent";
 import SimpleBar from "simplebar-react";
 import { getCookieUtil } from "../../utils/getCookieUtil";
 
-const AdoptionStatusPage = () => {
+const AdoptstatusionStatusPage = () => {
   const [pets, setPets] = useState([]);
 
   const stringUser = getCookieUtil('user');
@@ -87,4 +87,4 @@ const AdoptionStatusPage = () => {
   )
 }
 
-export default AdoptionStatusPage
+export default AdoptstatusionStatusPage

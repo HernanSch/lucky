@@ -5,10 +5,12 @@ import { useNavigate, useParams } from 'react-router-dom';
 import DataComponent from '../../Components/DataComponent/DataComponent';
 import HealthComponent from '../../Components/HealthComponent/HealthComponent';
 import AdoptionComponent from '../../Components/AdoptionComponent/AdoptionComponent';
-
+import { getCookieUtil } from "../../utils/getCookieUtil";
 const PetDetailPage = () => {
   const {id} = useParams();
   const navigate = useNavigate();
+  const [isLogged, setIsLogged] = useState(!!getCookieUtil('token'));
+
   
   const [pet, setPet] = useState({})
   
@@ -90,7 +92,7 @@ const PetDetailPage = () => {
           </div>
           <div className="p-petdetail-button">
             <button className="p-petdetail-button__white" onClick={() => navigate("/DonatePage")}>Apadrinar</button>
-            <button className="p-petdetail-button__red" onClick={() => navigate("/AdoptFormPage")}>Adoptar</button> 
+            {isLogged &&  <button className="p-petdetail-button__red" onClick={() =>navigate("/AdoptFormPage")}>Adoptar</button> }
           </div>
       </div>
      </div>

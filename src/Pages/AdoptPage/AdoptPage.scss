@@ -263,13 +263,7 @@
         background-size: 35%;
         background-position-y: 12px;
     }
-    &-sex__girl {
-        background-image: url(./../../../public/assets/icons/female.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 35%;
-        background-position-y: 12px;
-    }
+    
     &-size {
         margin-top: 40px;
     }
@@ -324,7 +318,7 @@
         opacity: 90%;
 }
 .p-adopt-filter-button-sex__boy:hover,
-.p-adopt-filter-button-sex__boy:focus, 
+.p-adopt-filter-button-sex__boy:focus,
 .p-adopt-filter-button-sex__boy:visited {
         background-image: url(./../../../public/assets/icons/male-red.png);
         border: 2px solid $toamto-color;

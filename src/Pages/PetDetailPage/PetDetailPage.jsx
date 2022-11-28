@@ -5,6 +5,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import DataComponent from '../../Components/DataComponent/DataComponent';
 import HealthComponent from '../../Components/HealthComponent/HealthComponent';
 import AdoptionComponent from '../../Components/AdoptionComponent/AdoptionComponent';
+import AddPetsToUser from '../../Components/AddPetsToUser/AddPetsToUser';
 
 const PetDetailPage = () => {
   const {id} = useParams();
@@ -91,6 +92,7 @@ const PetDetailPage = () => {
           <div className="p-petdetail-button">
             <button className="p-petdetail-button__white" onClick={() => navigate("/DonatePage")}>Apadrinar</button>
             <button className="p-petdetail-button__red" onClick={() => navigate("/AdoptFormPage")}>Adoptar</button> 
+            {/* <AddPetsToUser></AddPetsToUser> */}
           </div>
       </div>
      </div>

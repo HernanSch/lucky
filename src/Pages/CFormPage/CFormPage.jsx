@@ -3,6 +3,8 @@ import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import FormNavComponent from '../../Components/FormNavComponent/FormNavComponent';
 import './CFormPage.scss'
+import { API } from "../../services/api";
+import { getCookieUtil } from "../../utils/getCookieUtil";
 
 
 const CFormPage = () => {
@@ -10,6 +12,22 @@ const CFormPage = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => console.log(data);
     console.log(errors);
+
+    const stringUser = getCookieUtil('user');
+
+    const user = JSON.parse(stringUser ? stringUser : '{}');
+    // console.log(user?.user)
+    
+    const onSubmitAdd = formData => {
+      console.log(formData)
+          API.put(`'users/user/add/${user.id}'`,formData).then(res => {
+              console.log("Entro al API?")         
+              document.cookie = res.data.id;
+                                            
+              console.log(res.data.id)
+          })
+      }
+
   return (
     
       <form onSubmit={handleSubmit(onSubmit)}>
@@ -68,7 +86,7 @@ const CFormPage = () => {
       <p>No<input {...register("No", { required: true })} type="radio" value="No" /></p>
       </div>
       <div>
-       <button className="c-button-siguiente" onClick={() => navigate("/CFormPage")}>ENVIAR</button>
+       <button className="c-button-siguiente" onClick={() => {onSubmitAdd(); navigate("/CFormPage")}}>ENVIAR</button>
     </div>
     </div>
     </form>

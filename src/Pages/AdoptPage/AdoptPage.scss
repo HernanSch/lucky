@@ -301,8 +301,8 @@
         color: $toamto-color;
         opacity: 90%;
 }
- .p-adopt-filter-button__cat:hover,
- .p-adopt-filter-button__cat:focus,
+.p-adopt-filter-button__cat:hover,
+.p-adopt-filter-button__cat:focus,
 .p-adopt-filter-button__cat:visited {
         background-image: url(./../../../public/assets/icons/cat-red.png);
         border: 2px solid $toamto-color;
@@ -318,7 +318,7 @@
         opacity: 90%;
 }
 .p-adopt-filter-button-sex__boy:hover,
-.p-adopt-filter-button-sex__boy:focus,  
+.p-adopt-filter-button-sex__boy:focus,
 .p-adopt-filter-button-sex__boy:visited {
         background-image: url(./../../../public/assets/icons/male-red.png);
         border: 2px solid $toamto-color;
@@ -349,10 +349,10 @@
         color: $toamto-color;
         opacity: 90%;
 }
-.p-adopt-filter-button-size__big:hover, 
-.p-adopt-filter-button-size__big:focus,
+.p-adopt-filter-button-size__big:hover,
+.p-adopt-filter-button-size__big:focus, 
 .p-adopt-filter-button-size__big:visited {
-        background-image: url(./../../../public/assets/icons/dog-red.png);
+    background-image: url(./../../../public/assets/icons/dog-red.png);
         border: 2px solid $toamto-color;
         color: $toamto-color;
         opacity: 90%;

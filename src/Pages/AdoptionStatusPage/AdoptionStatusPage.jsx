@@ -6,7 +6,7 @@ import NavbarComponent from "../../Components/NavbarComponent/NavbarComponent";
 import SimpleBar from "simplebar-react";
 import { getCookieUtil } from "../../utils/getCookieUtil";
 
-const AdoptionStatusPage = () => {
+const AdoptstatusionStatusPage = () => {
   const [pets, setPets] = useState([]);
 
   const stringUser = getCookieUtil('user');
@@ -31,19 +31,19 @@ const AdoptionStatusPage = () => {
   return (
     <>
      
-      <div className="p-adopt-container">
+      <div className="p-adoptstatus-container">
      
-        <div className="p-adopt-holder">
-          <div className="p-adopt-menu">
+        <div className="p-adoptstatus-holder">
+          <div className="p-adoptstatus-menu">
           
            
-            <div className="p-adopt-menu__filter">
+            <div className="p-adoptstatus-menu__filter">
               <h6>Animales adoptados</h6>
              
             </div>
           </div>
-          <SimpleBar className="c-adopt-gallery-holder">
-            <div className="c-adopt-gallery-holder__box">
+          <SimpleBar className="c-adoptstatus-gallery-holder">
+            <div className="c-adoptstatus-gallery-holder__box">
               {pets.map((item, index) => {
                
                 return (
@@ -52,15 +52,15 @@ const AdoptionStatusPage = () => {
                  {(item._id == user.pets[0] || item._id == user.pets[1] || item._id == user.pets[2]
                   || item._id == user.pets[3]  || item._id == user.pets[4] ) &&
                  
-                  <div className="c-adopt-gallery-card">
+                  <div className="c-adoptstatus-gallery-card">
                     <Link to={`/AdoptPage/${item._id}`}>
-                      <div className="c-adopt-gallery-card__img">
+                      <div className="c-adoptstatus-gallery-card__img">
                         <img
                           className="image"
                           src={item.photo}
                           alt={item.name}
                         />
-                        <div className="c-adopt-gallery-card__text">
+                        <div className="c-adoptstatus-gallery-card__text">
                           <h4>{item?.name}</h4>
                           
                         </div>
@@ -87,4 +87,4 @@ const AdoptionStatusPage = () => {
   )
 }
 
-export default AdoptionStatusPage
+export default AdoptstatusionStatusPage

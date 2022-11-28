@@ -263,13 +263,7 @@
         background-size: 35%;
         background-position-y: 12px;
     }
-    &-sex__girl {
-        background-image: url(./../../../public/assets/icons/female.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 35%;
-        background-position-y: 12px;
-    }
+    
     &-size {
         margin-top: 40px;
     }
@@ -299,50 +293,66 @@
     }
     
 }
-.p-adopt-filter-button__dog:hover, 
+.p-adopt-filter-button__dog:hover,
+.p-adopt-filter-button__dog:focus, 
 .p-adopt-filter-button__dog:visited {
+        background-image: url(./../../../public/assets/icons/perrop-red.png);
         border: 2px solid $toamto-color;
         color: $toamto-color;
         opacity: 90%;
 }
-.p-adopt-filter-button__cat:hover, 
+ .p-adopt-filter-button__cat:hover,
+ .p-adopt-filter-button__cat:focus,
 .p-adopt-filter-button__cat:visited {
+        background-image: url(./../../../public/assets/icons/cat-red.png);
         border: 2px solid $toamto-color;
         color: $toamto-color;
         opacity: 90%;
 }
-.p-adopt-filter-button__bird:hover, 
+.p-adopt-filter-button__bird:hover,
+.p-adopt-filter-button__bird:focus, 
 .p-adopt-filter-button__bird:visited {
+        background-image: url(./../../../public/assets/icons/bird-red.png);
         border: 2px solid $toamto-color;
         color: $toamto-color;
         opacity: 90%;
 }
-.p-adopt-filter-button-sex__boy:hover, 
+.p-adopt-filter-button-sex__boy:hover,
+.p-adopt-filter-button-sex__boy:focus,  
 .p-adopt-filter-button-sex__boy:visited {
+        background-image: url(./../../../public/assets/icons/male-red.png);
         border: 2px solid $toamto-color;
         color: $toamto-color;
         opacity: 90%;
 }
-.p-adopt-filter-button-sex__girl:hover, 
+.p-adopt-filter-button-sex__girl:hover,
+.p-adopt-filter-button-sex__girl:focus, 
 .p-adopt-filter-button-sex__girl:visited {
+        background-image: url(./../../../public/assets/icons/female-red.png);
         border: 2px solid $toamto-color;
         color: $toamto-color;
         opacity: 90%;
 }
-.p-adopt-filter-button-size__small:hover, 
+.p-adopt-filter-button-size__small:hover,
+.p-adopt-filter-button-size__small:focus, 
 .p-adopt-filter-button-size__small:visited {
+        background-image: url(./../../../public/assets/icons/dog-red.png);
         border: 2px solid $toamto-color;
         color: $toamto-color;
         opacity: 90%;
 }
-.p-adopt-filter-button-size__mid:hover, 
+.p-adopt-filter-button-size__mid:hover,
+.p-adopt-filter-button-size__mid:focus, 
 .p-adopt-filter-button-size__mid:visited {
+        background-image: url(./../../../public/assets/icons/dog-red.png);
         border: 2px solid $toamto-color;
         color: $toamto-color;
         opacity: 90%;
 }
 .p-adopt-filter-button-size__big:hover, 
+.p-adopt-filter-button-size__big:focus,
 .p-adopt-filter-button-size__big:visited {
+        background-image: url(./../../../public/assets/icons/dog-red.png);
         border: 2px solid $toamto-color;
         color: $toamto-color;
         opacity: 90%;

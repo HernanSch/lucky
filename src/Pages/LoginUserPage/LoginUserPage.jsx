@@ -5,11 +5,9 @@ import "./LoginUserPage.scss"
 
 const LoginAsocPage = () => {
   return (
-    <div className='p-loginuser-container'>
-    <div className='p-loginuser-img'></div>
-        <h6>¡Hola! para continuar, inicia sesión o crea una cuenta</h6>
+    <div className='p-reguser-container'>
         <LoginUserComponent/>
-        {/* <AuthButton></AuthButton> */}
+        <AuthButton></AuthButton>
     </div>
   )
 }

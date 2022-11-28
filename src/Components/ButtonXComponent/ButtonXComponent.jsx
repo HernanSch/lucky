@@ -6,7 +6,7 @@ const BottonXCompoment = () => {
 const navigate = useNavigate();
   return (
     <div>
-       <button className="c-button-X" onClick={() => navigate("/Election")}><i class="fa fa-times" aria-hidden="true"></i></button>
+       <button className="c-button-X" onClick={() => navigate("/Election")}>X</button>
     </div>
   )
 }

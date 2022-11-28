@@ -4,38 +4,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
-    
-}
-.p-profile-holder {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
+    height: 90vh;
+    margin-top: 73px;
     
 }
 .foto-user{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 70px;
-    height: 70px;
-    border: 2px solid rgb( 1, 116 ,142);
+    width: 71px;
+    height: 71px;
+    border:solid;
+    border-color: rgb( 1, 116 ,142);
     border-radius: 50px;
-    img{
-        width: 66px;
-        height: 66px;
+    img{width: 65px;
+        height: 65px;
         border-radius: 50px;
     }
 
 }
 .button-container{
     margin-top: 24px;
-}
-.button-container button {
-    max-width: 400px;
 }
 

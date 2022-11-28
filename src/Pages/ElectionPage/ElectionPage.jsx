@@ -9,7 +9,7 @@ const ElectionPage = () => {
       <p>¿Cómo quieres entrar?</p>
       <ButtonDashboardComponent title='Usuario' route='LoginUserPage'></ButtonDashboardComponent>
       <ButtonDashboardComponent title='Asociación Protectora' route='LoginAsocPage'></ButtonDashboardComponent>
-      <a href="/Main">Registrarse en otro momento</a>
+      <a href="/">Registrarse en otro momento</a>
       </div>
     </div>
   )

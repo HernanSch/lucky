@@ -4,31 +4,34 @@ import SearchComponent from "../../Components/SearchComponent/SearchComponent";
 
 const AsociationPage = () => {
 
-    const [allProtectors, setProtectors] = useState([]);
+    const [allProtectors, setProtector] = useState([]);
     const [searchProtector, setSearchProtector] = useState([]);
 
     useEffect(() => {
         const getData = async () => {
             const { data } = await axios.get("http://localhost:8000/animalProtector/user");
-            setProtectors(data);
+            setProtector(data);
         };
         getData()
 
     }, []);
-    const filterPets = allProtectors.filter((protector) => protector.name.toLowerCase().includes(searchProtector))
 
-  return (
+    const filterProtectors = allProtectors.filter((protectors) => protectors.name.toLowerCase().includes(searchProtector));
+    
+
+    return (
+
     <div>AsociationPage
         <div>
-        <SearchComponent setSearchPj={setSearchProtector}></SearchComponent>
+        <SearchComponent setSearchProtector={setSearchProtector}></SearchComponent>
         </div>
 
-        {filterPets.map((item, index) => {
+        {filterProtectors.map((item, index) => {
             return (
-            <div className="c-adopt-gallery-card">
-                <div className="c-adopt-gallery-card__img" >
-                        <img className="image" src={item.photo} alt={item.name} />
-                    <div className="c-adopt-gallery-card__text">
+            <div>
+                <div>
+                    <img src={item.photo} alt={item.name} />
+                    <div>
                         <h4>{item?.name}</h4>
                         <h6>{item?.mail}</h6>
                     </div>
@@ -42,4 +45,4 @@ const AsociationPage = () => {
   )
 }
 
-export default AsociationPage
+export default AsociationPage;

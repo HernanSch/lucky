@@ -43,7 +43,7 @@ const DataComponent = () => {
            </div>
            <div className='c-data-box2'>
             <h6>Historia</h6>
-            <p>Lorem ipsum dolot</p>
+            <p>{pet.description}</p>
            </div>
                    
     </div>

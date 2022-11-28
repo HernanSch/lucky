@@ -8,7 +8,7 @@ const MorePage = () => {
     <div className="p-more-container">
       <div  className='p-more-holder'>
             <div className='button-container'>
-            <ButtonBlueUsers title={"Asociaciones Protectoras"} route={"MainPage"} img={"./assets/icons/protectora.png"}></ButtonBlueUsers>
+            <ButtonBlueUsers title={"Asociaciones Protectoras"} route={"AsociationPage"} img={"./assets/icons/protectora.png"}></ButtonBlueUsers>
             </div>
             <div className='button-container'>
             <ButtonBlueUsers title={"Eventos"} route={"MainPage"} img={"./assets/icons/events.png"}></ButtonBlueUsers>

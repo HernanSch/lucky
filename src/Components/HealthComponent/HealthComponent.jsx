@@ -53,7 +53,7 @@ const HealthComponent = () => {
         </div> 
         <div className='c-health-box'>
             <h6>Tienes que saber</h6>
-            <p>Lorem ipsum dolot</p>
+            <p>{pet.personality}</p>
         </div>
       </div>
           

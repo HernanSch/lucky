@@ -9,51 +9,37 @@ const LoginAsocComponent = () => {
     const navigate = useNavigate();
     const { register, handleSubmit } = useForm();
     
-    const {setIsLogged,setProtector} = useContext(IsLoggedContext);
-    
+    const {setIsLogged} = useContext(IsLoggedContext);
+    console.log("hola")
 
     const onSubmit = formData => {
       console.log(formData)
-        API.post('animalProtector/login', formData).then(res => {
-            console.log("ee")         
+        API.post('users/login', formData).then(res => {
+              // console.log(res.data.userInfo)
              document.cookie = 'token=' + res.data.token;
-             document.cookie = 'user=' +  JSON.stringify(res.data.ProtectorInfo);
-             setProtector(res.data.ProtectorInfo)             
-             setIsLogged(res.data.token);
-             console.log(res.data.token)
+             document.cookie = 'user=' +  JSON.stringify(res.data.userInfo);
              
-             
-              //setIsLogged ? navigate("/Main") : alert("error")
+            setIsLogged(true);
         })
     }
   return (
-    <div className='c-loginasoc-container'>
+    <div className='registro'>
         <form onSubmit={handleSubmit(onSubmit)}>
             
-            
-            <div className="c-input-wrapper">
-            <i className="fa fa-envelope-o c-input-icon" aria-hidden="true"></i> 
-            <input  id="email" className='c-input'
+            <label htmlFor="email">Email</label>
+            <input  id="email"
                    {...register("mail",{ required: true, pattern: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<;>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/ })}/>
-             
-            </div>
-            <div className="c-input-wrapper">
-            <i className="fa fa-eye c-input-icon" aria-hidden="true"></i>
-            <input  id="password" className='c-input' type="password" defaultValue={'123456Ab!'}
+            
+            <label htmlFor="password">Password</label>
+            <input  id="password" type="password" defaultValue={'123456Ab*'}
                    {...register("password",{
                        required: true,
                        pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$/
                    })}/> 
-                   
+           
+
             
-            <p>¿Has olvidado tu contraseña?</p>   
-            </div>
-            
-            <div className='c-loginasoc-button'>
-              <button type="submit" className='c-loginasoc-button__blue' >Iniciar Sesión</button>
-              <button type="submit" className='c-loginasoc-button__white' onClick={() => navigate("/RegAsocPage")}>Crear Cuenta</button>
-            </div>
-            
+            <button type="submit" onClick={() => navigate("/Main")}>Login</button>
         </form>
       </div>
   )

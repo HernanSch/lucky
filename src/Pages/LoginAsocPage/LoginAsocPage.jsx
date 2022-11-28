@@ -3,11 +3,10 @@ import LoginAsocComponent from '../../Components/LoginAsocComponent/LoginAsocCom
 import "./LoginAsocPage.scss"
 const LoginAsocPage = () => {
   return (
-    <div className='p-loginasoc-container'>
-        <div className='p-loginasoc-img'></div>
-        <h6>¡Hola! para continuar, inicia sesión o crea una cuenta</h6>
+    <div>
         <LoginAsocComponent/>
     </div>
   )
 }
+
 export default LoginAsocPage

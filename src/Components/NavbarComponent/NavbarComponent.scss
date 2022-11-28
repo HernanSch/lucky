@@ -3,20 +3,19 @@
 .c-navbar-container{
     display: flex;
     width: 100vw;
-    height: 8vh;
-    box-shadow: 0 -5px 5px 0px rgba(18, 19, 22, 0.2);
+    height: 10vh;
+    bottom: 0;
+    box-shadow: 0px -10px 1px rgba(18, 19, 22, 0.1);
     align-items: center;
     justify-content: center;
     & ul {
-        margin-top: 2vh;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 80vw;
-        align-content: center;
     }
     & li {
         display: flex;
+        margin: 20px;
 
     }
 
@@ -25,52 +24,45 @@
 .c-navbar-button {
     display: flex;
     &__home {
-        width: 30px;
-        height: 30px;
-        background-image: url(../../../public/assets/icons/home.png); 
+        width: 24px;
+        height: 24px;
+        background-image: url(../../../public/assets/icons/protectora.png); 
         background-position: center;
         background-size: contain;
         background-color: transparent;
         
     }
     &__map {
-        width: 30px;
-        height: 30px;
-        background-image: url(../../../public/assets/icons/mapnav.png); 
+        width: 24px;
+        height: 24px;
+        background-image: url(../../../public/assets/icons/protectora.png); 
         background-position: center;
         background-size: contain;
         background-color: transparent;
         
     }
     &__adopt {
-        width: 30px;
-        height: 30px;
-        background-image: url(../../../public/assets/icons/dognav.png); 
+        width: 24px;
+        height: 24px;
+        background-image: url(../../../public/assets/icons/protectora.png); 
         background-position: center;
         background-size: contain;
         background-color: transparent;
         
     }
     &__profile {
-        width: 28px;
-        height: 28px;
-        background-image: url(../../../public/assets/icons/boy.png); 
+        width: 24px;
+        height: 24px;
+        background-image: url(../../../public/assets/icons/protectora.png); 
         background-position: center;
         background-size: contain;
         background-color: transparent;
         
     }
-    &__profile img {
-        width: 30px;
-        height: 30px;
-        border-radius: 15px;
-        border: 1px solid $ocean-color;
-        
-    }
     &__more {
-        width: 30px;
-        height: 30px;
-        background-image: url(../../../public/assets/icons/more.png); 
+        width: 24px;
+        height: 24px;
+        background-image: url(../../../public/assets/icons/protectora.png); 
         background-position: center;
         background-size: contain;
         background-color: transparent;
@@ -81,6 +73,3 @@
 .active {
     color:red;
 }
-
-
-

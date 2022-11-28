@@ -178,73 +178,9 @@ const AdoptPage = () => {
         </div>
         }
         {filtro === true &&
-        <div>
-          <h2>Filtros</h2>
-          <button
-            onClick={() => {
-              dogFunc();
-            }}
-          >
-            perro
-          </button>
-          <br></br>
-          <button
-            onClick={() => {
-              catFunc();
-            }}
-          >
-            gato
-          </button>
-          <br></br>
-          <button
-            onClick={() => {
-              birdFunc();
-            }}
-          >
-            pajaro
-          </button>
-          <br></br>
-          <button
-            onClick={() => {
-              machoFunc();
-            }}
-          >
-            macho
-          </button>
-          <br></br>
-          <button
-            onClick={() => {
-              hembraFunc();
-            }}
-          >
-            hembra
-          </button>
-          <br></br>
-          <button
-            onClick={() => {
-              pequeFunc();
-            }}
-          >
-            pequeño
-          </button>
-          <br></br>
-          <button
-            onClick={() => {
-              medianoFunc();
-            }}
-          >
-            mediano
-          </button>
-          <br></br>
-          <button
-            onClick={() => {
-              grandeFunc();
-            }}
-          >
-            grande
-          </button>
-          <br></br>
-          <button
+        
+        <div className="p-adopt-filter-close">
+        <button className="o-c-button"
             onClick={() => {
               filtroFunc();
               filFunc();
@@ -252,10 +188,59 @@ const AdoptPage = () => {
             }}
           >
           
-            filtro
+          <i class="fa fa-times" aria-hidden="true"></i>
           </button>
+          <div className="p-adopt-filter-container">
+          <div className="p-adopt-filter-holder">
+          <h2>Filtros</h2>
+          <div className="p-adopt-filter-button">
+          
+          <button className="p-adopt-filter-button__dog" onClick={() => {dogFunc();}}>Perro</button>
+          
+          <button className="p-adopt-filter-button__cat" onClick={() => {catFunc();}}>Gato</button>
+          
+          <button className="p-adopt-filter-button__rabbit" >Conejo</button>
+
+          <button className="p-adopt-filter-button__hamster" >Cobaya</button>
+
+          <button className="p-adopt-filter-button__coati" >Pequeño mamifero</button>
+
+          <button className="p-adopt-filter-button__ferret" >Hurón</button>
+
+          <button className="p-adopt-filter-button__fish" >Pez</button>
+
+          <button className="p-adopt-filter-button__snake" >Reptil</button>
+
+          <button className="p-adopt-filter-button__frog" >Anfibio</button>
+
+          <button className="p-adopt-filter-button__spider" >Arácnido o Insecto</button>
+          
+          <button className="p-adopt-filter-button__bird" onClick={() => {birdFunc();}}>pajaro</button>
+
+          <div className="p-adopt-filter-button-sex">
+            
+          <button className="p-adopt-filter-button-sex__boy" onClick={() => {machoFunc();}}>macho</button>
+          
+          <button className="p-adopt-filter-button-sex__girl" onClick={() => {hembraFunc();}}>hembra</button>
+
           </div>
-      
+          
+          <div className="p-adopt-filter-button-size">
+        
+          <button className="p-adopt-filter-button-size__small" onClick={() => {pequeFunc();}}>pequeño</button>
+          
+          <button className="p-adopt-filter-button-size__mid" onClick={() => {medianoFunc();}}>mediano</button>
+          
+          <button className="p-adopt-filter-button-size__big" onClick={() => {grandeFunc();}}>grande</button>
+          
+          </div>
+          </div>
+          <div className="p-adopt-filter-button__apply">
+          <button  onClick={() => {filtroFunc();filFunc(); }}>Aplicar</button>
+          </div>
+          </div>
+          </div>
+          </div>
         }
     </>
   );

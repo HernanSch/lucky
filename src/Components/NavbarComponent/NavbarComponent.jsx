@@ -1,5 +1,5 @@
 import "./NavbarComponent.scss"
-import React from 'react'
+import React,{ useState } from 'react'
 import { NavLink } from "react-router-dom"
 import { getCookieUtil } from "../../utils/getCookieUtil";
 
@@ -7,7 +7,7 @@ const NavbarComponent = () => {
   const stringUser = getCookieUtil('user');
   const user = JSON.parse(stringUser ? stringUser : '{}');
   console.log(user?.photo)
-
+  const [isLogged, setIsLogged] = useState(!!getCookieUtil('token'));
   return (
     <div className="c-navbar-container">
       <ul>
@@ -21,7 +21,7 @@ const NavbarComponent = () => {
           <NavLink to='/AdoptPage' activeclassname={'active'}><button className="c-navbar-button__adopt"></button></NavLink>
         </li>
         <li>
-          <NavLink to='/ProfilePage' activeclassname={'active'}><button className="c-navbar-button__profile"><img className="c-nav-img" src={user.photo} alt=""></img></button></NavLink>
+        {isLogged &&  <NavLink to='/ProfilePage' activeclassname={'active'}><button className="c-navbar-button__profile"><img className="c-nav-img" src={user.photo} alt=""></img></button></NavLink>}
         </li>
         <li>
           <NavLink to='/MorePage' activeclassname={'active'}><button className="c-navbar-button__more"></button></NavLink>

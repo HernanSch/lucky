@@ -25,6 +25,7 @@ import CFormPage from './Pages/CFormPage/CFormPage'
 import FilterPage from './Pages/FilterPage/FilterPage';
 
 import AdoptionStatusPage from './Pages/AdoptionStatusPage/AdoptionStatusPage';
+import AddPetPage from './Pages/AddPetPage/AddPetPage';
 
 
 function App() {
@@ -63,7 +64,7 @@ function App() {
             <Route path='/MorePage' element={<MorePage/>}></Route>
             <Route path='/BFormPage' element={<BFormPage/>}></Route>
             <Route path='/CFormPage' element={<CFormPage/>}></Route>
-
+            <Route path='/AddPetPage' element={<AddPetPage/>}></Route>
             <Route path='/Filter' element={<FilterPage/>}></Route>
             <Route path='/AdoptionStatusPage' element={<AdoptionStatusPage/>}></Route>
 

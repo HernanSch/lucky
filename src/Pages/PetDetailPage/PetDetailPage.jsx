@@ -38,7 +38,7 @@ const PetDetailPage = () => {
         
         <div className='p-petdetail-image__card'>
             <div className='p-petdetail-image__text'>
-              <h6>{pet.colour}</h6>
+              <h6>{pet.name}</h6>
               <small>{pet.city}</small>
             </div>
             <div className='p-petdetail-image__buttons'>

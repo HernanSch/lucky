@@ -6,7 +6,7 @@ import NavbarComponent from '../../Components/NavbarComponent/NavbarComponent';
 
 export default function Home() {
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: process.env.API_KEY,
+    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
   });
 
   if (!isLoaded) return <div>Loading...</div>;
@@ -14,7 +14,8 @@ export default function Home() {
 }
 
 function Map() {
-  const center = useMemo(() => ({ lat: 40.416775 , lng: -3.703790 }), []);
+  const center = useMemo(() => ({ lat: 40.416775 , lng: -3.703790
+  }), []);
 
   return (
     <div>

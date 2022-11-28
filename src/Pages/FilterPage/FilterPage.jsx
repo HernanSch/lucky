@@ -55,29 +55,28 @@ if(pequeño){
 
  
   return (
-    <div>
-    <h2>Filtros</h2>
-    <button onClick={() => {dogFunc()}}>perro</button>
-    <br></br>
-    <button onClick={() => {catFunc()}}>gato</button>
-    <br></br>
-    <button onClick={() => {birdFunc()}}>pajaro</button>
-    <br></br>
-    <button onClick={() => {cons()}}>perest</button>
-    <br></br>
-    <button onClick={() => {machoFunc()}}>macho</button>
-      <br></br>
-    <button onClick={() => {hembraFunc()}}>hembra</button>
-    <br></br>
-    <button onClick={() => {pequeFunc()}}>pequeño</button>
-    <br></br>
-    <button onClick={() => {medianoFunc()}}>mediano</button>
-    <br></br>
-    <button onClick={() => {grandeFunc()}}>grande</button>
-    <br></br>
-
-    <button onClick={() =>{filtroFunc()}}>filtro</button>
-   
+    <div className="p-filter-container">
+      <div className="p-filter-holder">
+            <button onClick={() =>{filtroFunc()}}>filtro</button>
+            <button onClick={() => {dogFunc()}}>perro</button>
+            <br></br>
+            <button onClick={() => {catFunc()}}>gato</button>
+            <br></br>
+            <button onClick={() => {birdFunc()}}>pajaro</button>
+            <br></br>
+            <button onClick={() => {cons()}}>perest</button>
+            <br></br>
+            <button onClick={() => {machoFunc()}}>macho</button>
+              <br></br>
+            <button onClick={() => {hembraFunc()}}>hembra</button>
+            <br></br>
+            <button onClick={() => {pequeFunc()}}>pequeño</button>
+            <br></br>
+            <button onClick={() => {medianoFunc()}}>mediano</button>
+            <br></br>
+            <button onClick={() => {grandeFunc()}}>grande</button>
+            <br></br>  
+      </div>
     </div>
   
   )

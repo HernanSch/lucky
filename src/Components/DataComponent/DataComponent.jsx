@@ -22,12 +22,30 @@ const DataComponent = () => {
   return (
     <div className='c-data-container'>
       <div className='c-data-holder'>
-         <h6>{pet.species}</h6>  
-        <h6>{pet.birthday}</h6>  
-        <h6>{pet.sex}</h6>   
-        <h6>{pet.size}</h6>
-        <h6>{pet.weigth}</h6>
-        <h6>{pet.record}</h6>              
+      <div className='c-data-patita'>
+        <div className='c-data-patita__img'><span>Especie</span></div><p>{pet.species}</p>
+        </div> 
+        <div className='c-data-patita'>
+        <div className='c-data-patita__img'><span>Cumpleaños</span></div><p>{pet.birthday}</p>
+        </div>
+        <div className='c-data-patita'>
+        <div className='c-data-patita__img'><span>Sexo</span></div><p>{pet.sex}</p>
+        </div>
+        <div className='c-data-patita'>
+        <div className='c-data-patita__img'><span>Tamaño</span></div><p>{pet.size}</p>
+        </div>
+        <div className='c-data-patita'>
+        <div className='c-data-patita__img'><span>Peso</span></div><p>{pet.weigth}</p>
+        </div>
+            <div className='c-data-box'>
+            <h6>Personalidad</h6>
+            <p>{pet.record}</p>
+           </div>
+           <div className='c-data-box2'>
+            <h6>Historia</h6>
+            <p>Lorem ipsum dolot</p>
+           </div>
+                   
     </div>
     </div>
   )
